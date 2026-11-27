@@ -1,0 +1,11 @@
+source: https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/
+title: Como acesso a minha Get Conta? - Getnet
+
+Como acesso a minha Get Conta? - Getnet
+Para ter acesso a sua conta você precisa baixar o App Getnet na sua loja de aplicativos e realizar o login através do CPF/CPNJ ou e-mail e a senha cadastrada na Getnet, podendo ser no Aplicativo Getnet Brasil ou Portal Minha Conta.
+Minha agência e conta não apareceu, o que eu faço?
+Confira se os dados estão corretos, se caso sim, será necessário desinstalar o Aplicativo Getnet Brasil e instalar novamente, se persistir o erro, entre em contato com a gente através da nossa Central de Relacionamento pelo telefone: 4002-4000 | 4003-4000 (Capitais e regiões metropolitanas) e 0800-648-8000 (demais localidades).
+Quando e como vou receber os valores das minhas vendas realizadas?
+Você receberá suas vendas de acordo com o plano escolhido na contratação, e o dinheiro será depositado na sua Get Conta pela manhã da data escolhida.
+Como visualizar as minhas vendas?
+Para consultar o extrato das suas vendas, acesse o Aplicativo Getnet Brasil ou Portal Minha Conta.

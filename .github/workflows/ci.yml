@@ -1,0 +1,50 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      # Unit and integration tests: the real graph, tools, store and API with the model replaced. No API key.
+      - run: pytest
+
+      # Retrieval quality on the labelled set. Fails the build if the right page stops being found.
+      - run: python -m evals.retrieval --min-recall 0.90
+
+      # The guardrail's phrase layer on the adversarial set (the model layer needs an API key and is run by hand).
+      - run: python -m evals.guardrails --max-false-blocks 0.05
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: evaluation-reports
+          path: evals/reports/
+
+  # The review could not collect the tests because the model SDK was missing. They do not need it.
+  test-without-model-sdk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: grep -v '^anthropic' requirements.txt > offline.txt && pip install -r offline.txt
+      - run: pytest
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t getnet-agents .
+      # The same tests, inside the image that ships.
+      - run: docker run --rm getnet-agents pytest

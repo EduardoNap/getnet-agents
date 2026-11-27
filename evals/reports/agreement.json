@@ -1,0 +1,386 @@
+{
+  "correct": {
+    "labelled": 40,
+    "agreement": 0.975,
+    "kappa": 0.0
+  },
+  "grounded": {
+    "labelled": 40,
+    "agreement": 0.975,
+    "kappa": 0.0
+  },
+  "complete": {
+    "labelled": 40,
+    "agreement": 0.975,
+    "kappa": 0.0
+  },
+  "useful": {
+    "labelled": 40,
+    "agreement": 1.0,
+    "kappa": 1.0
+  },
+  "judge_model": "claude-opus-5-5",
+  "answers_by_the_judge_model_left_out": 20,
+  "verdicts": [
+    {
+      "id": "xa2",
+      "repeat": 2,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": false,
+      "reason": "The facts match the reference and evidence: the replacement was not approved, the battery can be swapped, and a maintenance request was opened. However, the message is in Portuguese, while the answer is in English and includes a leaked internal note wrongly claiming the merchant wrote in English."
+    },
+    {
+      "id": "xa3",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer says GM-77001 does not appear on the merchant's account and requests no replacement, which matches the reference. It escalates to a human instead, with the ticket number and handoff both backed by the evidence."
+    },
+    {
+      "id": "xf1",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer gives firmware 5.0.2 for GC-30977 and says it is not up to date, matching the reference. Both facts are in the tool evidence."
+    },
+    {
+      "id": "xf1",
+      "repeat": 2,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer gives firmware 5.0.2 for GC-30977 and says it is not up to date, which matches both the reference and the tool evidence. It is written in English, the merchant's language."
+    },
+    {
+      "id": "xf2",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer gives R$ 328,47 on 26/12 from today's credit sale, which matches the reference. Every figure, including the extra 25/12 payment, appears in the settlement schedule evidence, and the answer is in Portuguese like the merchant's message."
+    },
+    {
+      "id": "xf3",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer names the 'Configurar' app on the Get Smart, which matches the reference. The extra details about the pre-installed system apps (Pagamento, Getstore) that can't be removed or hidden appear in the evidence, and the answer is in English like the merchant's message."
+    },
+    {
+      "id": "xf3",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer names the 'Configurar' app on the Get Smart, which matches the reference. The extra detail that it is a preinstalled system app that cannot be removed or hidden appears in the evidence, and the answer is in English like the merchant's message."
+    },
+    {
+      "id": "xf5",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer says GC-30418 is online, which matches the reference. Every extra detail (model, GPRS, last seen 0 hours ago, no errors, firmware 5.1.0 up to date) appears in the tool evidence."
+    },
+    {
+      "id": "xf6",
+      "repeat": 2,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer says No, that cancellation is limited to the Cartão modality, and that the merchant should contact the brand directly for voucher sales. This matches the reference and the KB passage, and it is in the merchant's language."
+    },
+    {
+      "id": "xk11",
+      "repeat": 2,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: individuals and companies of every type (MEI, EI, EIRELI, franchise, LTDA). The extra detail on opening without a machine via Credenciamento > Sem máquina is in the evidence, and the support number is allowed without evidence."
+    },
+    {
+      "id": "xk12",
+      "repeat": 2,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference on every point: self-service mode, one app open at a time, password-protected settings, screen always on, and management through the Configurar app. Each of these facts appears in the knowledge-base evidence."
+    },
+    {
+      "id": "xk13",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference steps: open the Getstore, select 'Todos os Aplicativos', then install the app with the Portal Minha Conta login. The extra details about the website option and the preinstalled system apps appear in the evidence, and the answer is in English like the merchant's message."
+    },
+    {
+      "id": "xk13",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference steps: open the Getstore, select 'Todos os Aplicativos', then install and confirm with the Portal Minha Conta credentials. The extra details about pre-installed apps and choosing an automation via the website are supported by the evidence and contradict nothing."
+    },
+    {
+      "id": "xk4",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer points to Portal do Cliente > Financeiro > Agenda Financeira for future payments, with detail, which matches the reference. Every fact, including the other Financeiro options, appears in the KB evidence, and the answer is in Portuguese."
+    },
+    {
+      "id": "xk4",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: Agenda Financeira, under Financeiro in the Portal do Cliente, shows future payments with detail. The extra details on Histórico de Vendas and Recebimentos all appear in the KB evidence, and the answer is in Portuguese."
+    },
+    {
+      "id": "xk5",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: no purchase is needed because the machine comes with its own exclusive chip and data plan. The Wi-Fi details appear in the evidence, and the support number is pre-configured, so no fact failed."
+    },
+    {
+      "id": "xk5",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: no SIM card or data plan is needed because the machine comes with its own chip and data plan. The extra Wi-Fi detail is supported by the KB, and the support number is allowed without evidence."
+    },
+    {
+      "id": "xk6",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer lists the Alelo, Pluxee, Ticket and VR vouchers plus MasterCard, Visa, Elo, Amex and Hipercard, matching the reference. The extra detail on enabling open and closed arrangements appears in the evidence and does not contradict the reference, and the answer is in Portuguese."
+    },
+    {
+      "id": "xk6",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer gives the same voucher brands as the reference (Alelo, Pluxee, Ticket, VR) and the same card brands (MasterCard, Visa, Elo, Amex, Hipercard). The extra detail on open and closed arrangements is supported by the evidence, and the answer is in Portuguese like the merchant's message."
+    },
+    {
+      "id": "xk7",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: the terminal is not configured, and the fix is Function, 59, Function 25, operator password, Function 46, then a test sale. Every step appears in the ADQ 1-06 evidence, and the answer is in English like the merchant's message."
+    },
+    {
+      "id": "xk8",
+      "repeat": 2,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference and the KB entry for ADQ 1-87. It gives the chip registration cause and the steps: chip check, Função, 25, merchant password, 46, 90 and a test sale, all in Portuguese."
+    },
+    {
+      "id": "xk8",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: a chip registration error, fixed by checking the chip, Função, 25, merchant password, Função 46, Função 90, then a test sale. Every step appears in the KB evidence, and the answer is in Portuguese."
+    },
+    {
+      "id": "xk9",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The steps match the reference and the evidence: Vendas, Cartão, the period filter, the [+] icon and Cancelar venda, plus the card-only limitation. The extra details on Voucher sales, the cancelled statuses and Pedidos e atendimentos all appear in the evidence, and the answer is in English like the merchant's message."
+    },
+    {
+      "id": "xm1",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer correctly names GC-30977 and error ADQ 1-87 (chip registration error) and gives the full fix sequence (chip, Function, 25, password, 46, 90, test sale). Every detail, including 72 hours, GPRS and firmware 5.0.2, appears in the evidence, and the answer is in the merchant's language."
+    },
+    {
+      "id": "xm11",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: R$ 74.35 net after R$ 1.05 in fees on the R$ 75.40 sale, paid 2026-11-25, which is yesterday. It lists the same individual card brands (Mastercard, Visa, Elo, Amex, Hipercard), and every figure, date, account and brand appears in the tool evidence."
+    },
+    {
+      "id": "xm12",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: R$ 57.19 tomorrow from today's debit sale, and R$ 1.00 per paid link on the free Inicial plan. Every figure and condition, including the payout dates, bank account and terms, appears in the evidence, and the answer is in English like the merchant's message."
+    },
+    {
+      "id": "xm2",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer gives the net R$ 328,47 paid in 30 days (26/12/2026), the full app steps (Serviços, Antecipação de Vendas, account, terms, simulate, Antecipar, password) and the R$ 50,00 minimum, all of which match the reference and appear in the evidence. It is in Portuguese."
+    },
+    {
+      "id": "xm3",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: R$ 174.60 net from the R$ 180.00 credit sale, paid in 30 days (2026-12-26). It also correctly says individuals and companies of every type (MEI, EI, EIRELI, franchise, LTDA) can open a Get Conta. Every figure and step appears in the settlement and knowledge-base evidence."
+    },
+    {
+      "id": "xm9",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: R$ 174,60 net, paid on 26/12/2026 (30 days), plus the app steps and the 48-hour wait. Every figure and step appears in the evidence, and the answer is in Portuguese."
+    },
+    {
+      "id": "xn3",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer says it could not find a warranty period, as the reference requires, and states no period. The only specific fact is the support number 4002-4000, which needs no evidence, and the answer is in English like the merchant's message."
+    },
+    {
+      "id": "xn3",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer says it could not find a battery warranty period and gives none, which matches the reference. Its description of the search results (fees, rental prices, delivery tracking) matches the evidence, and the referral to 4002-4000 is allowed."
+    },
+    {
+      "id": "xn4",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer invents no procedure or fine amount and refers the merchant to human support through a ticket, as the reference requires. The ticket number TCK-CC62D3DE appears in the evidence, and the answer is in Portuguese."
+    },
+    {
+      "id": "xn5",
+      "repeat": 2,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer says no SWIFT code was found and gives no code, which matches the reference. It refers the merchant to the configured support line 4002-4000 and replies in English, the merchant's language."
+    },
+    {
+      "id": "xr2",
+      "repeat": 2,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer relays the block of sale TX-71225, the result within 5 business days and the email notice, all of which match the reference and the evidence. The ticket number TCK-F2052EC5 also appears in the evidence, and the answer is in Portuguese like the merchant's message."
+    },
+    {
+      "id": "xr3",
+      "repeat": 2,
+      "correct": false,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The reference gives a definite 7-day deadline for sending the signed receipt through the app. The answer weighs that against the help page's generic 12 calendar days and says it cannot tell which applies, which contradicts the reference's clear deadline. All its facts appear in the evidence."
+    },
+    {
+      "id": "xr4",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: the R$ 15,00 charge was Getnet's error and will be refunded within 3 business days. The ticket number and the agent's reply both appear in the evidence, and the answer is in Portuguese, the language of the message."
+    },
+    {
+      "id": "xs11",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: R$ 0,81 on debit, R$ 11,53 on credit, R$ 12,34 total. The extra gross, net and payout figures come from the settlement evidence or sum correctly from it."
+    },
+    {
+      "id": "xs2",
+      "repeat": 3,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference: R$ 2.318,64 from yesterday's credit sale plus R$ 89,10 from today's Pix, R$ 2.407,74 in total. Every figure, date, the account and the status appear in the settlement evidence, and the answer is in Portuguese."
+    },
+    {
+      "id": "xs5",
+      "repeat": 2,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer matches the reference and the evidence: R$ 340.00 gross, R$ 11.53 in fees, R$ 328.47 net, paid on 2026-12-26 under 30-day credit terms. The transaction ID and the Bradesco ****7712 account both appear in the evidence."
+    },
+    {
+      "id": "xs9",
+      "repeat": 1,
+      "correct": true,
+      "grounded": true,
+      "complete": true,
+      "useful": true,
+      "reason": "The answer names the Santander account ending in 4321, which matches the reference and the evidence. Its notes that the branch is not shown and the number is masked are accurate to the evidence."
+    }
+  ]
+}

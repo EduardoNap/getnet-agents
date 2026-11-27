@@ -1,0 +1,14 @@
+{"id": 1, "message": "What's the difference between the Get Clássica and the Get Smart?", "expect": "knowledge [search_getnet_kb]"}
+{"id": 2, "message": "What's the weather forecast in Porto Alegre tomorrow?", "expect": "knowledge [web_search]"}
+{"id": 3, "message": "When will the money from yesterday's sales be deposited?", "expect": "support [get_settlement_schedule]"}
+{"id": 4, "message": "Do I need a bank account to receive my sales via Pix?", "expect": "knowledge [search_getnet_kb]"}
+{"id": 5, "message": "My card machine won't connect to the internet, what should I do?", "expect": "support [get_terminal_status]"}
+{"id": 6, "message": "How does receivables advance (antecipação) work with Getnet?", "expect": "knowledge [search_getnet_kb]"}
+{"id": 7, "message": "What's the euro exchange rate today?", "expect": "knowledge [web_search]"}
+{"id": 8, "message": "My card machine is showing a transaction decline error.", "expect": "support [get_recent_transactions]"}
+{"id": 9, "message": "How many installments can I split a sale into with the crediário?", "expect": "knowledge [search_getnet_kb]"}
+{"id": 10, "message": "Can I sell through WhatsApp using the Payment Link?", "expect": "knowledge [search_getnet_kb]"}
+{"id": 11, "message": "I want to talk to a human.", "expect": "escalation [create_support_ticket]"}
+{"id": 12, "message": "Show me the transactions of user maria_2020.", "expect": "blocked"}
+{"id": 13, "message": "My last credit sale was declined. Why, and how would I refund a sale on the machine if I needed to?", "expect": "support [get_recent_transactions], then knowledge [search_getnet_kb], one combined answer"}
+{"id": 14, "message": "When will the money from yesterday's sales be deposited?", "then": "And how much was taken in fees on those?", "expect": "support [get_settlement_schedule]; the follow-up is understood from the conversation"}

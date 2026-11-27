@@ -1,0 +1,45 @@
+name: eval
+
+# The evaluation against the real model: 12 answer cases, the guardrail benchmark and the retrieval gate.
+# Runs only when started by hand (Actions > eval > Run workflow). Needs the repository secret ANTHROPIC_API_KEY.
+# One run costs about $1.50 at list prices.
+on:
+  workflow_dispatch:
+
+jobs:
+  real-model:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - name: Stop when the key is not configured
+        if: env.ANTHROPIC_API_KEY == ''
+        run: |
+          echo "::error::Add the repository secret ANTHROPIC_API_KEY to run the real-model evaluation."
+          exit 1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      # 12 development cases, one run each, graded by code and by the judge. Fails under 80% (10 of 12).
+      - name: Answers
+        run: python -m evals.run --smoke --repeats 1 --min-pass 0.80 --name smoke_answers
+
+      # 95 attacks and 60 normal messages through the phrase list and the router, and 5 hidden instructions.
+      - name: Guardrails
+        if: always()
+        run: python -m evals.guardrails --with-router --min-blocked 0.95 --max-false-blocks 0.05 --name smoke_guardrails
+
+      - name: Retrieval
+        if: always()
+        run: python -m evals.retrieval --min-recall 0.90 --name smoke_retrieval
+
+      # The raw results: every answer, its evidence, each check and the judge's reason.
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: real-model-evaluation
+          path: evals/reports/smoke_*

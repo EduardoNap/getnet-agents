@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+data/chroma/
+.cache/
+.DS_Store
+data/state/
+evals/reports/offline_*
+evals/reports/smoke_*
+backups/

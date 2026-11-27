@@ -1,0 +1,21 @@
+name: release
+
+# A tag such as v3.0.0 builds the image, runs the tests inside it and publishes it to the GitHub registry.
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "IMAGE=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_ENV"  # the registry wants lower case
+      - run: docker build -t "$IMAGE:$GITHUB_REF_NAME" -t "$IMAGE:latest" .
+      # Nothing is published unless the tests pass inside the image that ships.
+      - run: docker run --rm "$IMAGE:$GITHUB_REF_NAME" pytest
+      - run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+      - run: docker push --all-tags "$IMAGE"

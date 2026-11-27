@@ -1,0 +1,98 @@
+# Alert rules for Prometheus. Every expression reads a metric the service exports at /metrics;
+# tests/test_monitoring.py fails if one names a metric that does not exist.
+#
+# The thresholds start from what the blind evaluation measured (README, "Results at a glance"):
+# $0.026 per answered request, 20.6 s at the 95th percentile, 12% of answers revised by the Verifier.
+# They are starting points to tune on real traffic.
+groups:
+  - name: getnet-agents-availability
+    rules:
+      - alert: ServiceDown
+        expr: up{job="getnet-agents"} == 0
+        for: 2m
+        labels: {severity: page}
+        annotations:
+          summary: The assistant is not answering its health scrape.
+
+      - alert: ServerErrors
+        expr: sum(rate(getnet_http_requests_total{status=~"5.."}[10m])) / sum(rate(getnet_http_requests_total[10m])) > 0.02
+        for: 10m
+        labels: {severity: page}
+        annotations:
+          summary: More than 2% of requests end in a server error.
+
+      - alert: AgentStepsFailing
+        expr: sum(rate(getnet_agent_steps_total{status="error"}[10m])) / sum(rate(getnet_agent_steps_total[10m])) > 0.05
+        for: 10m
+        labels: {severity: page}
+        annotations:
+          summary: More than 5% of agent runs fail. The model provider or a tool is probably down; merchants are being handed to humans.
+
+      - alert: SlowResponses
+        expr: histogram_quantile(0.95, sum by (le) (rate(getnet_request_seconds_bucket[15m]))) > 30
+        for: 15m
+        labels: {severity: ticket}
+        annotations:
+          summary: The slowest 5% of messages take over 30 s (20.6 s when measured).
+
+  - name: getnet-agents-routing
+    rules:
+      - alert: HighHandoffRate
+        expr: sum(rate(getnet_requests_total{outcome="handoff"}[30m])) / sum(rate(getnet_requests_total{outcome!="repeated"}[30m])) > 0.25
+        for: 30m
+        labels: {severity: ticket}
+        annotations:
+          summary: More than a quarter of messages go to a human. Check for a routing change, a failing specialist or a new kind of question.
+
+      - alert: BlockedMessagesSpike
+        expr: sum(rate(getnet_requests_total{outcome="blocked"}[10m])) / sum(rate(getnet_requests_total{outcome!="repeated"}[10m])) > 0.10
+        for: 10m
+        labels: {severity: ticket}
+        annotations:
+          summary: More than 10% of messages are blocked. Either an attack is under way or the guardrail is blocking customers.
+
+      - alert: RouterStoppedUsingASpecialist
+        expr: sum(rate(getnet_router_decisions_total{action=~"knowledge|support"}[1h])) / sum(rate(getnet_router_decisions_total[1h])) < 0.20
+        for: 1h
+        labels: {severity: ticket}
+        annotations:
+          summary: Under 20% of the Router's decisions send work to a specialist. Routing has drifted.
+
+  - name: getnet-agents-quality-and-cost
+    rules:
+      - alert: AnswersRejectedByReview
+        expr: sum(rate(getnet_answers_rejected_total[1h])) / sum(rate(getnet_agent_steps_total{agent=~"knowledge|support"}[1h])) > 0.15
+        for: 1h
+        labels: {severity: ticket}
+        annotations:
+          summary: The Router's review sends back more than 15% of specialist answers as not grounded.
+
+      - alert: VerifierRevisingOften
+        expr: sum(rate(getnet_agent_steps_total{agent="verifier",status="revised"}[1h])) / sum(rate(getnet_agent_steps_total{agent="verifier"}[1h])) > 0.25
+        for: 1h
+        labels: {severity: ticket}
+        annotations:
+          summary: The Verifier rewrites more than 25% of answers (12% when measured). The specialists are adding unsupported statements.
+
+      - alert: CostPerRequestAboveTarget
+        expr: sum(rate(getnet_request_cost_usd_total[1h])) / sum(rate(getnet_requests_total{outcome=~"answer|handoff"}[1h])) > 0.06
+        for: 1h
+        labels: {severity: ticket}
+        annotations:
+          summary: The model cost per message is above the $0.06 target ($0.026 when measured).
+
+  - name: getnet-agents-human-queue
+    rules:
+      - alert: TicketsOverdue
+        expr: getnet_tickets{state="overdue"} > 0
+        for: 10m
+        labels: {severity: page}
+        annotations:
+          summary: A merchant has waited for a human past the due time (30 minutes for fraud and complaints, 4 hours otherwise).
+
+      - alert: RateLimitedClients
+        expr: sum(rate(getnet_http_requests_total{status="429"}[10m])) > 0.5
+        for: 10m
+        labels: {severity: ticket}
+        annotations:
+          summary: Clients are being rate limited steadily. Look for a runaway integration.

@@ -1,0 +1,17 @@
+{
+  "correct": {
+    "labelled": 20,
+    "agreement": 1.0,
+    "kappa": null
+  },
+  "grounded": {
+    "labelled": 20,
+    "agreement": 0.85,
+    "kappa": 0.583
+  },
+  "complete": {
+    "labelled": 20,
+    "agreement": 1.0,
+    "kappa": null
+  }
+}

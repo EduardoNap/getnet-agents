@@ -1,0 +1,3276 @@
+{
+  "questions": 64,
+  "k": 6,
+  "candidates": 40,
+  "modes": {
+    "vector only": {
+      "all": {
+        "recall@1": 0.547,
+        "recall@3": 0.672,
+        "recall@6": 0.781,
+        "mrr": 0.64,
+        "ndcg@6": 0.656,
+        "context_precision@6": 0.268,
+        "n": 64
+      },
+      "kind=hard": {
+        "recall@1": 0.3,
+        "recall@3": 0.4,
+        "recall@6": 0.6,
+        "mrr": 0.409,
+        "ndcg@6": 0.391,
+        "context_precision@6": 0.225,
+        "n": 20
+      },
+      "kind=plain": {
+        "recall@1": 0.659,
+        "recall@3": 0.795,
+        "recall@6": 0.864,
+        "mrr": 0.745,
+        "ndcg@6": 0.776,
+        "context_precision@6": 0.288,
+        "n": 44
+      },
+      "lang=en": {
+        "recall@1": 0.541,
+        "recall@3": 0.622,
+        "recall@6": 0.757,
+        "mrr": 0.618,
+        "ndcg@6": 0.64,
+        "context_precision@6": 0.288,
+        "n": 37
+      },
+      "lang=pt": {
+        "recall@1": 0.556,
+        "recall@3": 0.741,
+        "recall@6": 0.815,
+        "mrr": 0.67,
+        "ndcg@6": 0.677,
+        "context_precision@6": 0.241,
+        "n": 27
+      },
+      "split=confirm": {
+        "recall@1": 0.5,
+        "recall@3": 0.667,
+        "recall@6": 0.833,
+        "mrr": 0.632,
+        "ndcg@6": 0.679,
+        "context_precision@6": 0.222,
+        "n": 12
+      },
+      "split=main": {
+        "recall@1": 0.558,
+        "recall@3": 0.673,
+        "recall@6": 0.769,
+        "mrr": 0.642,
+        "ndcg@6": 0.65,
+        "context_precision@6": 0.279,
+        "n": 52
+      }
+    },
+    "hybrid": {
+      "all": {
+        "recall@1": 0.609,
+        "recall@3": 0.734,
+        "recall@6": 0.766,
+        "mrr": 0.69,
+        "ndcg@6": 0.69,
+        "context_precision@6": 0.268,
+        "n": 64
+      },
+      "kind=hard": {
+        "recall@1": 0.45,
+        "recall@3": 0.5,
+        "recall@6": 0.6,
+        "mrr": 0.51,
+        "ndcg@6": 0.5,
+        "context_precision@6": 0.267,
+        "n": 20
+      },
+      "kind=plain": {
+        "recall@1": 0.682,
+        "recall@3": 0.841,
+        "recall@6": 0.841,
+        "mrr": 0.772,
+        "ndcg@6": 0.776,
+        "context_precision@6": 0.269,
+        "n": 44
+      },
+      "lang=en": {
+        "recall@1": 0.568,
+        "recall@3": 0.703,
+        "recall@6": 0.73,
+        "mrr": 0.656,
+        "ndcg@6": 0.661,
+        "context_precision@6": 0.27,
+        "n": 37
+      },
+      "lang=pt": {
+        "recall@1": 0.667,
+        "recall@3": 0.778,
+        "recall@6": 0.815,
+        "mrr": 0.737,
+        "ndcg@6": 0.73,
+        "context_precision@6": 0.265,
+        "n": 27
+      },
+      "split=confirm": {
+        "recall@1": 0.5,
+        "recall@3": 0.667,
+        "recall@6": 0.667,
+        "mrr": 0.6,
+        "ndcg@6": 0.598,
+        "context_precision@6": 0.208,
+        "n": 12
+      },
+      "split=main": {
+        "recall@1": 0.635,
+        "recall@3": 0.75,
+        "recall@6": 0.788,
+        "mrr": 0.711,
+        "ndcg@6": 0.711,
+        "context_precision@6": 0.282,
+        "n": 52
+      }
+    },
+    "hybrid, English rewritten in Portuguese": {
+      "all": {
+        "recall@1": 0.734,
+        "recall@3": 0.797,
+        "recall@6": 0.828,
+        "mrr": 0.78,
+        "ndcg@6": 0.764,
+        "context_precision@6": 0.292,
+        "n": 64
+      },
+      "kind=hard": {
+        "recall@1": 0.45,
+        "recall@3": 0.55,
+        "recall@6": 0.65,
+        "mrr": 0.53,
+        "ndcg@6": 0.507,
+        "context_precision@6": 0.267,
+        "n": 20
+      },
+      "kind=plain": {
+        "recall@1": 0.864,
+        "recall@3": 0.909,
+        "recall@6": 0.909,
+        "mrr": 0.894,
+        "ndcg@6": 0.881,
+        "context_precision@6": 0.303,
+        "n": 44
+      },
+      "lang=en": {
+        "recall@1": 0.784,
+        "recall@3": 0.811,
+        "recall@6": 0.838,
+        "mrr": 0.812,
+        "ndcg@6": 0.788,
+        "context_precision@6": 0.311,
+        "n": 37
+      },
+      "lang=pt": {
+        "recall@1": 0.667,
+        "recall@3": 0.778,
+        "recall@6": 0.815,
+        "mrr": 0.737,
+        "ndcg@6": 0.73,
+        "context_precision@6": 0.265,
+        "n": 27
+      },
+      "split=confirm": {
+        "recall@1": 0.667,
+        "recall@3": 0.75,
+        "recall@6": 0.75,
+        "mrr": 0.729,
+        "ndcg@6": 0.713,
+        "context_precision@6": 0.25,
+        "n": 12
+      },
+      "split=main": {
+        "recall@1": 0.75,
+        "recall@3": 0.808,
+        "recall@6": 0.846,
+        "mrr": 0.792,
+        "ndcg@6": 0.776,
+        "context_precision@6": 0.301,
+        "n": 52
+      }
+    }
+  },
+  "per_question": [
+    {
+      "id": "r01",
+      "mode": "vector only",
+      "question": "How do I connect my card machine to Wi-Fi?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-configuracoes/como-configurar-o-wi-fi-na-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/maquininha-de-cartao/"
+      ]
+    },
+    {
+      "id": "r02",
+      "mode": "vector only",
+      "question": "How do I refund a sale on the card machine?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.16666666666666666,
+      "ndcg@6": 0.43067655807339306,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/"
+      ]
+    },
+    {
+      "id": "r03",
+      "mode": "vector only",
+      "question": "What is the inactivity fee on the Get Conta?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "r04",
+      "mode": "vector only",
+      "question": "What are the daily transfer limits of the Get Conta?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.1,
+      "ndcg@6": 0.38685280723454163,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/"
+      ]
+    },
+    {
+      "id": "r05",
+      "mode": "vector only",
+      "question": "How do I change the bank account where I receive my sales?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.8503449055347546,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-trocar-o-domicilio-bancario/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/"
+      ]
+    },
+    {
+      "id": "r06",
+      "mode": "vector only",
+      "question": "How do I request maintenance for my card machine?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/maquininha-de-cartao/"
+      ]
+    },
+    {
+      "id": "r07",
+      "mode": "vector only",
+      "question": "How can I order an additional card machine?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.027777777777777776,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-configuracoes/configuracoes-da-sua-maquininha/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/maquininha-de-cartao/"
+      ]
+    },
+    {
+      "id": "r08",
+      "mode": "vector only",
+      "question": "What does error ADQ 1-19 mean and how do I fix it?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.1111111111111111,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/"
+      ]
+    },
+    {
+      "id": "r09",
+      "mode": "vector only",
+      "question": "What is a chargeback and how can I avoid it?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 1.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/"
+      ]
+    },
+    {
+      "id": "r10",
+      "mode": "vector only",
+      "question": "What is the Financial Reserve that Getnet keeps from my balance?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.8333333333333334,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/reserva-financeira/",
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/antecipacao-reserva-financeira/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "r11",
+      "mode": "vector only",
+      "question": "How do I advance my receivables in the app?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "r12",
+      "mode": "vector only",
+      "question": "What is Get Tap and which phones does it work on?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.9469024295259745,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-tap/o-que-e-o-get-tap-e-como-funciona/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-utilizar-o-get-tap/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/"
+      ]
+    },
+    {
+      "id": "r13",
+      "mode": "vector only",
+      "question": "How do I track the delivery of my Get Mini?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-rastreamento/como-acompanhar-entrega-get-mini/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/"
+      ]
+    },
+    {
+      "id": "r14",
+      "mode": "vector only",
+      "question": "How do I end my partnership with Getnet?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-a-parceria/",
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-produtos-e-servicos/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-finalizar-seu-cadastro-no-aplicativo-getnet-brasil-e-comecar-a-aceitar-pagamentos/"
+      ]
+    },
+    {
+      "id": "r15",
+      "mode": "vector only",
+      "question": "How do I reset the password of the Getnet app?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo-2/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/"
+      ]
+    },
+    {
+      "id": "r16",
+      "mode": "vector only",
+      "question": "What is the difference between an authorised and an approved sale?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.6131471927654584,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/entenda-o-que-e-venda-autorizada-aprovada-e-desfeita/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"
+      ]
+    },
+    {
+      "id": "r17",
+      "mode": "vector only",
+      "question": "How do I issue a status letter for a sale that was declined?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg@6": 0.5,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/onde-consultar-uma-venda-cancelada/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-emitir-carta-status/"
+      ]
+    },
+    {
+      "id": "r18",
+      "mode": "vector only",
+      "question": "How do I start accepting meal and food vouchers?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.125,
+      "ndcg@6": 0.5,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/",
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/"
+      ]
+    },
+    {
+      "id": "r19",
+      "mode": "vector only",
+      "question": "How does paying with Pix by biometrics work?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-utilizo-o-pix-por-biometria/",
+        "https://site.getnet.com.br/pix/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/"
+      ]
+    },
+    {
+      "id": "r20",
+      "mode": "vector only",
+      "question": "Which e-commerce plugins does Getnet work with?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-ecommerce/plugins-digitais-que-a-getnet-trabalha/",
+        "https://site.getnet.com.br/getcheckout/",
+        "https://site.getnet.com.br/link-de-pagamento-getnet/"
+      ]
+    },
+    {
+      "id": "r21",
+      "mode": "vector only",
+      "question": "Como habilito o Pix pelo portal?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-habilitar-pix-pelo-portal/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/"
+      ]
+    },
+    {
+      "id": "r22",
+      "mode": "vector only",
+      "question": "Como faço uma venda com Pix na maquininha?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r23",
+      "mode": "vector only",
+      "question": "O que é a DIRF?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-imposto-de-renda/o-que-e-dirf/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/reserva-financeira/"
+      ]
+    },
+    {
+      "id": "r24",
+      "mode": "vector only",
+      "question": "Como exportar minhas vendas Pix?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-exportar-minhas-vendas-pix/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/"
+      ]
+    },
+    {
+      "id": "r25",
+      "mode": "vector only",
+      "question": "Como acessar o manual da minha maquininha?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-acessa-o-manual-da-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-acessar-as-minhas-vendas-realizadas/",
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/"
+      ]
+    },
+    {
+      "id": "r26",
+      "mode": "vector only",
+      "question": "O que é o PAT?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-imposto-de-renda/o-que-e-dirf/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r27",
+      "mode": "vector only",
+      "question": "Como habilitar a antecipação automática pelo portal?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-portal/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-habilitar-pix-pelo-portal/"
+      ]
+    },
+    {
+      "id": "r28",
+      "mode": "vector only",
+      "question": "Como cancelo a minha Get Conta?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-cancelar-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-cancelar-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/onde-consultar-uma-venda-cancelada/"
+      ]
+    },
+    {
+      "id": "r29",
+      "mode": "vector only",
+      "question": "Apareceu o erro ADQ 4-91 na maquininha, o que fazer?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-91/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/"
+      ]
+    },
+    {
+      "id": "r30",
+      "mode": "vector only",
+      "question": "O que é o Conciliador Essencial?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "r31",
+      "mode": "vector only",
+      "question": "Como estornar uma venda pelo aplicativo?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg@6": 0.5,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-pelo-aplicativo-getnet-brasil/"
+      ]
+    },
+    {
+      "id": "r32",
+      "mode": "vector only",
+      "question": "Onde consulto uma venda cancelada?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/onde-consultar-uma-venda-cancelada/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-cancelar-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "r33",
+      "mode": "vector only",
+      "question": "My terminal says it has not been initialised.",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.037037037037037035,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/antecipacao-reserva-financeira/"
+      ]
+    },
+    {
+      "id": "r34",
+      "mode": "vector only",
+      "question": "Tap to pay stopped working on my reader.",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.02702702702702703,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-1-50/",
+        "https://site.getnet.com.br/get-ajuda-whatsapp-business/descontinuacao-whatsapp-business/"
+      ]
+    },
+    {
+      "id": "r35",
+      "mode": "vector only",
+      "question": "Part of my balance is being held back as a guarantee. Why?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.2,
+      "ndcg@6": 0.3065735963827292,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/antecipacao-reserva-financeira/"
+      ]
+    },
+    {
+      "id": "r36",
+      "mode": "vector only",
+      "question": "I have not used my account for months and now I am charged R$10 every month.",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/",
+        "https://site.getnet.com.br/ofertas/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/"
+      ]
+    },
+    {
+      "id": "r37",
+      "mode": "vector only",
+      "question": "A customer disputed a purchase with their bank. What happens now?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 1.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/"
+      ]
+    },
+    {
+      "id": "r38",
+      "mode": "vector only",
+      "question": "Can I turn my phone into a card reader?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.16666666666666666,
+      "ndcg@6": 0.38364913903790027,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "r39",
+      "mode": "vector only",
+      "question": "Is charging customers through WhatsApp Business still available?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-whatsapp-business/descontinuacao-whatsapp-business/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/"
+      ]
+    },
+    {
+      "id": "r40",
+      "mode": "vector only",
+      "question": "How much cash can I withdraw per day?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"
+      ]
+    },
+    {
+      "id": "r41",
+      "mode": "vector only",
+      "question": "I need an online checkout for my web shop.",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.6131471927654584,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/getcheckout/",
+        "https://site.getnet.com.br/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "r42",
+      "mode": "vector only",
+      "question": "Was the mobile top-up service shut down?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-tap/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r43",
+      "mode": "vector only",
+      "question": "I want to get paid the same day I sell.",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0625,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/",
+        "https://site.getnet.com.br/ofertas/"
+      ]
+    },
+    {
+      "id": "r44",
+      "mode": "vector only",
+      "question": "como configuro o wifi da maquinha",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-configuracoes/como-configurar-o-wi-fi-na-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-configuracoes/configuracoes-da-sua-maquininha/"
+      ]
+    },
+    {
+      "id": "r45",
+      "mode": "vector only",
+      "question": "quero receber o dinheiro das vendas no mesmo dia",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.06666666666666667,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/"
+      ]
+    },
+    {
+      "id": "r46",
+      "mode": "vector only",
+      "question": "dá pra vender pelo celular sem ter maquininha?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.16666666666666666,
+      "ndcg@6": 0.23463936301137822,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/",
+        "https://site.getnet.com.br/get-tap/"
+      ]
+    },
+    {
+      "id": "r47",
+      "mode": "vector only",
+      "question": "minha maquininha quebrou, como peço o conserto?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/"
+      ]
+    },
+    {
+      "id": "r48",
+      "mode": "vector only",
+      "question": "esqueci a senha do app",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.1111111111111111,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-app/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/"
+      ]
+    },
+    {
+      "id": "r49",
+      "mode": "vector only",
+      "question": "qual o valor mínimo para antecipar?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/",
+        "https://site.getnet.com.br/maquininha-de-cartao/",
+        "https://site.getnet.com.br/melhor-maquininha-para-o-seu-negocio/"
+      ]
+    },
+    {
+      "id": "r50",
+      "mode": "vector only",
+      "question": "erro adq 119",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.08333333333333333,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-1-50/"
+      ]
+    },
+    {
+      "id": "r51",
+      "mode": "vector only",
+      "question": "o cliente contestou a compra no banco dele",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.38685280723454163,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-fazer-uma-venda-na-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r52",
+      "mode": "vector only",
+      "question": "preciso mudar a conta onde cai o dinheiro das vendas",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.25,
+      "ndcg@6": 0.2640681225725909,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/"
+      ]
+    },
+    {
+      "id": "c01",
+      "mode": "vector only",
+      "question": "Erro ADQ 1-84, como resolvo?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.07142857142857142,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-91/"
+      ]
+    },
+    {
+      "id": "c02",
+      "mode": "vector only",
+      "question": "What should I do about error ADQ 3-30?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0625,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/"
+      ]
+    },
+    {
+      "id": "c03",
+      "mode": "vector only",
+      "question": "erro IDL 1-08 na maquininha",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-idl-1-08/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-idl-1-04/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-idl-1-36/"
+      ]
+    },
+    {
+      "id": "c04",
+      "mode": "vector only",
+      "question": "The machine shows error S-2074.",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-s-2074/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/"
+      ]
+    },
+    {
+      "id": "c05",
+      "mode": "vector only",
+      "question": "Como consultar o status das minhas vendas?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-consultar-os-status-das-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/quais-possiveis-status-das-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "c06",
+      "mode": "vector only",
+      "question": "How do I disable Pix sales in the app?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-desabilitar-o-recebimento-de-vendas-via-pix-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/"
+      ]
+    },
+    {
+      "id": "c07",
+      "mode": "vector only",
+      "question": "Como atualizo meus dados cadastrais no aplicativo?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-atualizar-seus-dados-de-domicilio-bancario-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-atualizar-seus-dados-cadastrais-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/"
+      ]
+    },
+    {
+      "id": "c08",
+      "mode": "vector only",
+      "question": "How do I use the sales simulator?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "c09",
+      "mode": "vector only",
+      "question": "Como cancelar produtos e serviços da Getnet?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-produtos-e-servicos/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-pelo-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-cancelar-a-minha-get-conta/"
+      ]
+    },
+    {
+      "id": "c10",
+      "mode": "vector only",
+      "question": "How do I make a sale on the card machine?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.2,
+      "ndcg@6": 0.38685280723454163,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/todas-as-maquininhas/",
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "c11",
+      "mode": "vector only",
+      "question": "O que é o MDR?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-taxas/taxas-por-transacao/",
+        "https://site.getnet.com.br/",
+        "https://site.getnet.com.br/get-ajuda-imposto-de-renda/o-que-e-dirf/"
+      ]
+    },
+    {
+      "id": "c12",
+      "mode": "vector only",
+      "question": "How do I access my Get Conta?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.25,
+      "ndcg@6": 0.5,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/"
+      ]
+    },
+    {
+      "id": "r01",
+      "mode": "hybrid",
+      "question": "How do I connect my card machine to Wi-Fi?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-configuracoes/como-configurar-o-wi-fi-na-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-configuracoes/configuracoes-da-sua-maquininha/"
+      ]
+    },
+    {
+      "id": "r02",
+      "mode": "hybrid",
+      "question": "How do I refund a sale on the card machine?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.125,
+      "ndcg@6": 0.43067655807339306,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "r03",
+      "mode": "hybrid",
+      "question": "What is the inactivity fee on the Get Conta?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/"
+      ]
+    },
+    {
+      "id": "r04",
+      "mode": "hybrid",
+      "question": "What are the daily transfer limits of the Get Conta?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-realizo-uma-transferencia-e-quais-os-limites-diarios/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/",
+        "https://site.getnet.com.br/get-ajuda-whatsapp-business/descontinuacao-whatsapp-business/"
+      ]
+    },
+    {
+      "id": "r05",
+      "mode": "hybrid",
+      "question": "How do I change the bank account where I receive my sales?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.8503449055347546,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-trocar-o-domicilio-bancario/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/"
+      ]
+    },
+    {
+      "id": "r06",
+      "mode": "hybrid",
+      "question": "How do I request maintenance for my card machine?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "r07",
+      "mode": "hybrid",
+      "question": "How can I order an additional card machine?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.02702702702702703,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-configuracoes/configuracoes-da-sua-maquininha/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "r08",
+      "mode": "hybrid",
+      "question": "What does error ADQ 1-19 mean and how do I fix it?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.1111111111111111,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/"
+      ]
+    },
+    {
+      "id": "r09",
+      "mode": "hybrid",
+      "question": "What is a chargeback and how can I avoid it?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 1.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/"
+      ]
+    },
+    {
+      "id": "r10",
+      "mode": "hybrid",
+      "question": "What is the Financial Reserve that Getnet keeps from my balance?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/reserva-financeira/",
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/antecipacao-reserva-financeira/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "r11",
+      "mode": "hybrid",
+      "question": "How do I advance my receivables in the app?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "r12",
+      "mode": "hybrid",
+      "question": "What is Get Tap and which phones does it work on?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.9325210919548239,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-tap/o-que-e-o-get-tap-e-como-funciona/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-utilizar-o-get-tap/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/"
+      ]
+    },
+    {
+      "id": "r13",
+      "mode": "hybrid",
+      "question": "How do I track the delivery of my Get Mini?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-rastreamento/como-acompanhar-entrega-get-mini/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "r14",
+      "mode": "hybrid",
+      "question": "How do I end my partnership with Getnet?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-a-parceria/",
+        "https://www.getnet.net/en/",
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-produtos-e-servicos/"
+      ]
+    },
+    {
+      "id": "r15",
+      "mode": "hybrid",
+      "question": "How do I reset the password of the Getnet app?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo-2/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/"
+      ]
+    },
+    {
+      "id": "r16",
+      "mode": "hybrid",
+      "question": "What is the difference between an authorised and an approved sale?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.6131471927654584,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/entenda-o-que-e-venda-autorizada-aprovada-e-desfeita/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/"
+      ]
+    },
+    {
+      "id": "r17",
+      "mode": "hybrid",
+      "question": "How do I issue a status letter for a sale that was declined?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/onde-consultar-uma-venda-cancelada/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-emitir-carta-status/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/quais-possiveis-status-das-minhas-vendas/"
+      ]
+    },
+    {
+      "id": "r18",
+      "mode": "hybrid",
+      "question": "How do I start accepting meal and food vouchers?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/"
+      ]
+    },
+    {
+      "id": "r19",
+      "mode": "hybrid",
+      "question": "How does paying with Pix by biometrics work?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-utilizo-o-pix-por-biometria/",
+        "https://site.getnet.com.br/pix/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/"
+      ]
+    },
+    {
+      "id": "r20",
+      "mode": "hybrid",
+      "question": "Which e-commerce plugins does Getnet work with?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-ecommerce/plugins-digitais-que-a-getnet-trabalha/",
+        "https://site.getnet.com.br/getcheckout/",
+        "https://site.getnet.com.br/todas-as-maquininhas/"
+      ]
+    },
+    {
+      "id": "r21",
+      "mode": "hybrid",
+      "question": "Como habilito o Pix pelo portal?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-habilitar-pix-pelo-portal/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r22",
+      "mode": "hybrid",
+      "question": "Como faço uma venda com Pix na maquininha?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/"
+      ]
+    },
+    {
+      "id": "r23",
+      "mode": "hybrid",
+      "question": "O que é a DIRF?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-imposto-de-renda/o-que-e-dirf/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/reserva-financeira/"
+      ]
+    },
+    {
+      "id": "r24",
+      "mode": "hybrid",
+      "question": "Como exportar minhas vendas Pix?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-exportar-minhas-vendas-pix/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/"
+      ]
+    },
+    {
+      "id": "r25",
+      "mode": "hybrid",
+      "question": "Como acessar o manual da minha maquininha?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-acessa-o-manual-da-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-acessar-as-minhas-vendas-realizadas/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r26",
+      "mode": "hybrid",
+      "question": "O que é o PAT?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-imposto-de-renda/o-que-e-dirf/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r27",
+      "mode": "hybrid",
+      "question": "Como habilitar a antecipação automática pelo portal?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-portal/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-app/",
+        "https://site.getnet.com.br/get-ajuda-configuracoes/funcionalidades-portal-minha-conta-e-app-getnet-brasil/"
+      ]
+    },
+    {
+      "id": "r28",
+      "mode": "hybrid",
+      "question": "Como cancelo a minha Get Conta?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-cancelar-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-cancelar-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-a-parceria/"
+      ]
+    },
+    {
+      "id": "r29",
+      "mode": "hybrid",
+      "question": "Apareceu o erro ADQ 4-91 na maquininha, o que fazer?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-91/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/"
+      ]
+    },
+    {
+      "id": "r30",
+      "mode": "hybrid",
+      "question": "O que é o Conciliador Essencial?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/melhor-maquininha-para-o-seu-negocio/"
+      ]
+    },
+    {
+      "id": "r31",
+      "mode": "hybrid",
+      "question": "Como estornar uma venda pelo aplicativo?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-pelo-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "r32",
+      "mode": "hybrid",
+      "question": "Onde consulto uma venda cancelada?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/onde-consultar-uma-venda-cancelada/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/quais-possiveis-status-das-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-cancelar-minhas-vendas/"
+      ]
+    },
+    {
+      "id": "r33",
+      "mode": "hybrid",
+      "question": "My terminal says it has not been initialised.",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.037037037037037035,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-1-87/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/solucoes-get-smart/"
+      ]
+    },
+    {
+      "id": "r34",
+      "mode": "hybrid",
+      "question": "Tap to pay stopped working on my reader.",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.02702702702702703,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-1-50/",
+        "https://site.getnet.com.br/get-ajuda-whatsapp-business/descontinuacao-whatsapp-business/"
+      ]
+    },
+    {
+      "id": "r35",
+      "mode": "hybrid",
+      "question": "Part of my balance is being held back as a guarantee. Why?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.25,
+      "ndcg@6": 0.3065735963827292,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/antecipacao-reserva-financeira/"
+      ]
+    },
+    {
+      "id": "r36",
+      "mode": "hybrid",
+      "question": "I have not used my account for months and now I am charged R$10 every month.",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/",
+        "https://site.getnet.com.br/ofertas/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/"
+      ]
+    },
+    {
+      "id": "r37",
+      "mode": "hybrid",
+      "question": "A customer disputed a purchase with their bank. What happens now?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 1.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/"
+      ]
+    },
+    {
+      "id": "r38",
+      "mode": "hybrid",
+      "question": "Can I turn my phone into a card reader?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.1111111111111111,
+      "ndcg@6": 0.16716045496620227,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/"
+      ]
+    },
+    {
+      "id": "r39",
+      "mode": "hybrid",
+      "question": "Is charging customers through WhatsApp Business still available?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-whatsapp-business/descontinuacao-whatsapp-business/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-finalizar-seu-cadastro-no-aplicativo-getnet-brasil-e-comecar-a-aceitar-pagamentos/"
+      ]
+    },
+    {
+      "id": "r40",
+      "mode": "hybrid",
+      "question": "How much cash can I withdraw per day?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/"
+      ]
+    },
+    {
+      "id": "r41",
+      "mode": "hybrid",
+      "question": "I need an online checkout for my web shop.",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.8333333333333334,
+      "top": [
+        "https://site.getnet.com.br/getcheckout/",
+        "https://site.getnet.com.br/get-ajuda-ecommerce/plugins-digitais-que-a-getnet-trabalha/",
+        "https://site.getnet.com.br/"
+      ]
+    },
+    {
+      "id": "r42",
+      "mode": "hybrid",
+      "question": "Was the mobile top-up service shut down?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-tap/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/"
+      ]
+    },
+    {
+      "id": "r43",
+      "mode": "hybrid",
+      "question": "I want to get paid the same day I sell.",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0625,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/crediario/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-fazer-uma-venda-na-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r44",
+      "mode": "hybrid",
+      "question": "como configuro o wifi da maquinha",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-configuracoes/como-configurar-o-wi-fi-na-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-portal/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-fazer-uma-venda-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r45",
+      "mode": "hybrid",
+      "question": "quero receber o dinheiro das vendas no mesmo dia",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.1,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/ofertas/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/"
+      ]
+    },
+    {
+      "id": "r46",
+      "mode": "hybrid",
+      "question": "dá pra vender pelo celular sem ter maquininha?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg@6": 0.2960819109658652,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-tap/",
+        "https://site.getnet.com.br/"
+      ]
+    },
+    {
+      "id": "r47",
+      "mode": "hybrid",
+      "question": "minha maquininha quebrou, como peço o conserto?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r48",
+      "mode": "hybrid",
+      "question": "esqueci a senha do app",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo-2/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo/",
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/"
+      ]
+    },
+    {
+      "id": "r49",
+      "mode": "hybrid",
+      "question": "qual o valor mínimo para antecipar?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/",
+        "https://site.getnet.com.br/melhor-maquininha-para-o-seu-negocio/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/"
+      ]
+    },
+    {
+      "id": "r50",
+      "mode": "hybrid",
+      "question": "erro adq 119",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.08333333333333333,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-1-50/"
+      ]
+    },
+    {
+      "id": "r51",
+      "mode": "hybrid",
+      "question": "o cliente contestou a compra no banco dele",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.8333333333333334,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-fazer-uma-venda-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r52",
+      "mode": "hybrid",
+      "question": "preciso mudar a conta onde cai o dinheiro das vendas",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.2,
+      "ndcg@6": 0.23719771276929622,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/",
+        "https://site.getnet.com.br/maquininha-de-cartao/"
+      ]
+    },
+    {
+      "id": "c01",
+      "mode": "hybrid",
+      "question": "Erro ADQ 1-84, como resolvo?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.07142857142857142,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-91/"
+      ]
+    },
+    {
+      "id": "c02",
+      "mode": "hybrid",
+      "question": "What should I do about error ADQ 3-30?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0625,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/"
+      ]
+    },
+    {
+      "id": "c03",
+      "mode": "hybrid",
+      "question": "erro IDL 1-08 na maquininha",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.1111111111111111,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-1-50/"
+      ]
+    },
+    {
+      "id": "c04",
+      "mode": "hybrid",
+      "question": "The machine shows error S-2074.",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-s-2074/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/"
+      ]
+    },
+    {
+      "id": "c05",
+      "mode": "hybrid",
+      "question": "Como consultar o status das minhas vendas?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.9197207891481876,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-consultar-os-status-das-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/quais-possiveis-status-das-minhas-vendas/"
+      ]
+    },
+    {
+      "id": "c06",
+      "mode": "hybrid",
+      "question": "How do I disable Pix sales in the app?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-desabilitar-o-recebimento-de-vendas-via-pix-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/"
+      ]
+    },
+    {
+      "id": "c07",
+      "mode": "hybrid",
+      "question": "Como atualizo meus dados cadastrais no aplicativo?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-atualizar-seus-dados-de-domicilio-bancario-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-atualizar-seus-dados-cadastrais-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/"
+      ]
+    },
+    {
+      "id": "c08",
+      "mode": "hybrid",
+      "question": "How do I use the sales simulator?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "c09",
+      "mode": "hybrid",
+      "question": "Como cancelar produtos e serviços da Getnet?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-produtos-e-servicos/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-pelo-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/"
+      ]
+    },
+    {
+      "id": "c10",
+      "mode": "hybrid",
+      "question": "How do I make a sale on the card machine?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.125,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-configuracoes/configuracoes-da-sua-maquininha/",
+        "https://site.getnet.com.br/todas-as-maquininhas/"
+      ]
+    },
+    {
+      "id": "c11",
+      "mode": "hybrid",
+      "question": "O que é o MDR?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-taxas/taxas-por-transacao/",
+        "https://site.getnet.com.br/",
+        "https://site.getnet.com.br/get-ajuda-imposto-de-renda/o-que-e-dirf/"
+      ]
+    },
+    {
+      "id": "c12",
+      "mode": "hybrid",
+      "question": "How do I access my Get Conta?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-acessar-as-minhas-vendas-realizadas/"
+      ]
+    },
+    {
+      "id": "r01",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I connect my card machine to Wi-Fi?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-configuracoes/como-configurar-o-wi-fi-na-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-acessa-o-manual-da-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/link-de-pagamento-getnet/"
+      ]
+    },
+    {
+      "id": "r02",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I refund a sale on the card machine?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-na-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-pelo-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/"
+      ]
+    },
+    {
+      "id": "r03",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "What is the inactivity fee on the Get Conta?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/",
+        "https://site.getnet.com.br/crediario/"
+      ]
+    },
+    {
+      "id": "r04",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "What are the daily transfer limits of the Get Conta?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-realizo-uma-transferencia-e-quais-os-limites-diarios/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-a-get-conta/"
+      ]
+    },
+    {
+      "id": "r05",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I change the bank account where I receive my sales?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.8772153153380493,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-trocar-o-domicilio-bancario/",
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/"
+      ]
+    },
+    {
+      "id": "r06",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I request maintenance for my card machine?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-pedir-uma-maquininha-adicional/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/"
+      ]
+    },
+    {
+      "id": "r07",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How can I order an additional card machine?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-pedir-uma-maquininha-adicional/",
+        "https://site.getnet.com.br/ofertas/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r08",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "What does error ADQ 1-19 mean and how do I fix it?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.08333333333333333,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-23/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/"
+      ]
+    },
+    {
+      "id": "r09",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "What is a chargeback and how can I avoid it?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 1.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/"
+      ]
+    },
+    {
+      "id": "r10",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "What is the Financial Reserve that Getnet keeps from my balance?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.8333333333333334,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/reserva-financeira/",
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/antecipacao-reserva-financeira/",
+        "https://site.getnet.com.br/get-ajuda-configuracoes/como-consultar-minhas-vendas/"
+      ]
+    },
+    {
+      "id": "r11",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I advance my receivables in the app?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/",
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/",
+        "https://site.getnet.com.br/get-ajuda-configuracoes/como-consultar-minhas-vendas/"
+      ]
+    },
+    {
+      "id": "r12",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "What is Get Tap and which phones does it work on?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.7653606369886217,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-tap/o-que-e-o-get-tap-e-como-funciona/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-utilizar-o-get-tap/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/solucoes-get-smart/"
+      ]
+    },
+    {
+      "id": "r13",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I track the delivery of my Get Mini?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-rastreamento/como-acompanhar-entrega-get-mini/",
+        "https://site.getnet.com.br/ofertas/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/"
+      ]
+    },
+    {
+      "id": "r14",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I end my partnership with Getnet?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-a-parceria/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-cancelar-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-produtos-e-servicos/"
+      ]
+    },
+    {
+      "id": "r15",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I reset the password of the Getnet app?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo-2/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/solucoes-get-smart/"
+      ]
+    },
+    {
+      "id": "r16",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "What is the difference between an authorised and an approved sale?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.9197207891481876,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/entenda-o-que-e-venda-autorizada-aprovada-e-desfeita/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/quais-possiveis-status-das-minhas-vendas/"
+      ]
+    },
+    {
+      "id": "r17",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I issue a status letter for a sale that was declined?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-emitir-carta-status/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/quais-possiveis-status-das-minhas-vendas/"
+      ]
+    },
+    {
+      "id": "r18",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I start accepting meal and food vouchers?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/melhor-maquininha-para-o-seu-negocio/"
+      ]
+    },
+    {
+      "id": "r19",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How does paying with Pix by biometrics work?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-utilizo-o-pix-por-biometria/",
+        "https://site.getnet.com.br/pix/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r20",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Which e-commerce plugins does Getnet work with?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-ecommerce/plugins-digitais-que-a-getnet-trabalha/",
+        "https://site.getnet.com.br/getcheckout/",
+        "https://site.getnet.com.br/todas-as-maquininhas/"
+      ]
+    },
+    {
+      "id": "r21",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como habilito o Pix pelo portal?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-habilitar-pix-pelo-portal/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r22",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como faço uma venda com Pix na maquininha?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/"
+      ]
+    },
+    {
+      "id": "r23",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "O que é a DIRF?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-imposto-de-renda/o-que-e-dirf/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-reserva-financeira/reserva-financeira/"
+      ]
+    },
+    {
+      "id": "r24",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como exportar minhas vendas Pix?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-exportar-minhas-vendas-pix/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/"
+      ]
+    },
+    {
+      "id": "r25",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como acessar o manual da minha maquininha?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-acessa-o-manual-da-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-acessar-as-minhas-vendas-realizadas/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r26",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "O que é o PAT?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/get-ajuda-imposto-de-renda/o-que-e-dirf/",
+        "https://site.getnet.com.br/pix-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r27",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como habilitar a antecipação automática pelo portal?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-portal/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-app/",
+        "https://site.getnet.com.br/get-ajuda-configuracoes/funcionalidades-portal-minha-conta-e-app-getnet-brasil/"
+      ]
+    },
+    {
+      "id": "r28",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como cancelo a minha Get Conta?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-cancelar-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-cancelar-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-a-parceria/"
+      ]
+    },
+    {
+      "id": "r29",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Apareceu o erro ADQ 4-91 na maquininha, o que fazer?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-30/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-91/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/"
+      ]
+    },
+    {
+      "id": "r30",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "O que é o Conciliador Essencial?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/",
+        "https://site.getnet.com.br/melhor-maquininha-para-o-seu-negocio/"
+      ]
+    },
+    {
+      "id": "r31",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como estornar uma venda pelo aplicativo?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-pelo-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/"
+      ]
+    },
+    {
+      "id": "r32",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Onde consulto uma venda cancelada?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/onde-consultar-uma-venda-cancelada/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/quais-possiveis-status-das-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-cancelar-minhas-vendas/"
+      ]
+    },
+    {
+      "id": "r33",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "My terminal says it has not been initialised.",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-1-07/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r34",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Tap to pay stopped working on my reader.",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/"
+      ]
+    },
+    {
+      "id": "r35",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Part of my balance is being held back as a guarantee. Why?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.14285714285714285,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/"
+      ]
+    },
+    {
+      "id": "r36",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "I have not used my account for months and now I am charged R$10 every month.",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/"
+      ]
+    },
+    {
+      "id": "r37",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "A customer disputed a purchase with their bank. What happens now?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 1.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-voucher/o-que-e-o-pat/"
+      ]
+    },
+    {
+      "id": "r38",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Can I turn my phone into a card reader?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.07692307692307693,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/",
+        "https://site.getnet.com.br/ofertas/"
+      ]
+    },
+    {
+      "id": "r39",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Is charging customers through WhatsApp Business still available?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-whatsapp-business/descontinuacao-whatsapp-business/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-finalizar-seu-cadastro-no-aplicativo-getnet-brasil-e-comecar-a-aceitar-pagamentos/"
+      ]
+    },
+    {
+      "id": "r40",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How much cash can I withdraw per day?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/todas-as-maquininhas/",
+        "https://site.getnet.com.br/ofertas/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-tarifa-de-inatividade/"
+      ]
+    },
+    {
+      "id": "r41",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "I need an online checkout for my web shop.",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.6131471927654584,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/getcheckout/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-a-get-conta/",
+        "https://site.getnet.com.br/todas-as-maquininhas/"
+      ]
+    },
+    {
+      "id": "r42",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Was the mobile top-up service shut down?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.6666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-tap/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r43",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "I want to get paid the same day I sell.",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.16666666666666666,
+      "ndcg@6": 0.3562071871080222,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/",
+        "https://site.getnet.com.br/ofertas/",
+        "https://site.getnet.com.br/get-tap/"
+      ]
+    },
+    {
+      "id": "r44",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "como configuro o wifi da maquinha",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-configuracoes/como-configurar-o-wi-fi-na-sua-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-habilitar-antecipacao-automatica-pelo-portal/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-fazer-uma-venda-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r45",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "quero receber o dinheiro das vendas no mesmo dia",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.1,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/ofertas/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/"
+      ]
+    },
+    {
+      "id": "r46",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "dá pra vender pelo celular sem ter maquininha?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg@6": 0.2960819109658652,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-tap/",
+        "https://site.getnet.com.br/"
+      ]
+    },
+    {
+      "id": "r47",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "minha maquininha quebrou, como peço o conserto?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-solicitar-a-manutencao-da-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-recarga-de-celular-desligamento/sobre-o-desligamento-da-recarga-de-celular/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r48",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "esqueci a senha do app",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo-2/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-redefinir-a-senha-aplicativo/",
+        "https://site.getnet.com.br/get-ajuda-voucher/como-habilitar-vale-refeicao-va-e-vale-alimentacao-vr-no-aplicativo-getnet-brasil/"
+      ]
+    },
+    {
+      "id": "r49",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "qual o valor mínimo para antecipar?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.0,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/",
+        "https://site.getnet.com.br/melhor-maquininha-para-o-seu-negocio/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/"
+      ]
+    },
+    {
+      "id": "r50",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "erro adq 119",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.08333333333333333,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-1-50/"
+      ]
+    },
+    {
+      "id": "r51",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "o cliente contestou a compra no banco dele",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.8333333333333334,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/o-que-e-chargeback/",
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-fazer-uma-venda-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "r52",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "preciso mudar a conta onde cai o dinheiro das vendas",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 1.0,
+      "mrr": 0.2,
+      "ndcg@6": 0.23719771276929622,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/sobre-o-chargeback/",
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/",
+        "https://site.getnet.com.br/maquininha-de-cartao/"
+      ]
+    },
+    {
+      "id": "c01",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Erro ADQ 1-84, como resolvo?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.07142857142857142,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-91/"
+      ]
+    },
+    {
+      "id": "c02",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "What should I do about error ADQ 3-30?",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.06666666666666667,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-23/"
+      ]
+    },
+    {
+      "id": "c03",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "erro IDL 1-08 na maquininha",
+      "recall@1": 0.0,
+      "recall@3": 0.0,
+      "recall@6": 0.0,
+      "mrr": 0.1111111111111111,
+      "ndcg@6": 0.0,
+      "context_precision@6": 0.0,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-83/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-1-50/"
+      ]
+    },
+    {
+      "id": "c04",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "The machine shows error S-2074.",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-s-2074/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-27/",
+        "https://site.getnet.com.br/get-ajuda-erros-maquininha/erro-adq-4-23/"
+      ]
+    },
+    {
+      "id": "c05",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como consultar o status das minhas vendas?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 0.9197207891481876,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-consultar-os-status-das-minhas-vendas/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/quais-possiveis-status-das-minhas-vendas/"
+      ]
+    },
+    {
+      "id": "c06",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I disable Pix sales in the app?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-pix/como-desabilitar-o-recebimento-de-vendas-via-pix-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-get-tap/como-habilitar-e-vender-com-pix-no-get-tap/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-habilitar-o-recebimento-de-vendas-via-pix-no-aplicativo-getnet-brasil/"
+      ]
+    },
+    {
+      "id": "c07",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como atualizo meus dados cadastrais no aplicativo?",
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 0.5,
+      "ndcg@6": 0.6309297535714575,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-atualizar-seus-dados-de-domicilio-bancario-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-cadastro/como-atualizar-seus-dados-cadastrais-no-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-antecipacao-de-venda/como-antecipar-sua-vendas-pelo-app/"
+      ]
+    },
+    {
+      "id": "c08",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I use the sales simulator?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.5,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/simulador-calculadora-de-vendas/",
+        "https://site.getnet.com.br/get-ajuda-gestao-de-vendas/como-fazer-minha-gestao-de-venda/",
+        "https://site.getnet.com.br/quando-vale-a-pena-antecipar-as-suas-vendas-no-cartao/"
+      ]
+    },
+    {
+      "id": "c09",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "Como cancelar produtos e serviços da Getnet?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.16666666666666666,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-cancelamento/como-cancelar-produtos-e-servicos/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-pelo-aplicativo-getnet-brasil/",
+        "https://site.getnet.com.br/get-ajuda-receba-ja/plano-de-recebimento-reduzido/"
+      ]
+    },
+    {
+      "id": "c10",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I make a sale on the card machine?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-maquininha/como-fazer-uma-venda-na-maquininha-getnet/",
+        "https://site.getnet.com.br/get-ajuda-pix/como-fazer-uma-venda-com-pix-na-maquininha/",
+        "https://site.getnet.com.br/get-ajuda-chargeback/como-estornar-uma-venda-na-maquininha-getnet/"
+      ]
+    },
+    {
+      "id": "c11",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "O que é o MDR?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-taxas/taxas-por-transacao/",
+        "https://site.getnet.com.br/",
+        "https://site.getnet.com.br/get-ajuda-imposto-de-renda/o-que-e-dirf/"
+      ]
+    },
+    {
+      "id": "c12",
+      "mode": "hybrid, English rewritten in Portuguese",
+      "question": "How do I access my Get Conta?",
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@6": 1.0,
+      "mrr": 1.0,
+      "ndcg@6": 1.0,
+      "context_precision@6": 0.3333333333333333,
+      "top": [
+        "https://site.getnet.com.br/get-ajuda-get-conta/como-acesso-a-minha-get-conta/",
+        "https://site.getnet.com.br/get-ajuda-conciliador-essencial/sobre-o-conciliador-essencial/",
+        "https://site.getnet.com.br/get-ajuda-get-conta/o-que-e-a-get-conta/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1206 @@
+{
+  "meta": {
+    "date": "2026-11-26",
+    "commit": "d246848",
+    "model": "claude-sonnet-5-5",
+    "router_model": "claude-sonnet-5-5",
+    "judge_model": "claude-opus-5-5",
+    "repeats": 3,
+    "split": "dev"
+  },
+  "summary": {
+    "verifier": {},
+    "by_kind": {
+      "multi": {
+        "runs": 24,
+        "passed": "0/24",
+        "outcome": "24/24",
+        "agents": "0/24",
+        "tools": "0/24",
+        "facts": "3/24",
+        "correct": "24/24",
+        "grounded": "24/24",
+        "complete": "0/24",
+        "useful": "10/24"
+      },
+      "all": {
+        "runs": 24,
+        "passed": "0/24",
+        "outcome": "24/24",
+        "agents": "0/24",
+        "tools": "0/24",
+        "facts": "3/24",
+        "correct": "24/24",
+        "grounded": "24/24",
+        "complete": "0/24",
+        "useful": "10/24"
+      },
+      "split=dev": {
+        "runs": 24,
+        "passed": "0/24",
+        "outcome": "24/24",
+        "agents": "0/24",
+        "tools": "0/24",
+        "facts": "3/24",
+        "correct": "24/24",
+        "grounded": "24/24",
+        "complete": "0/24",
+        "useful": "10/24"
+      }
+    },
+    "cases": 8,
+    "cases_passing_every_repeat": 0,
+    "cases_with_mixed_results": [],
+    "cases_failing_every_repeat": [
+      "m1",
+      "m2",
+      "m3",
+      "m4",
+      "m5",
+      "m6",
+      "m7",
+      "m8"
+    ],
+    "seconds_median": 7.3,
+    "seconds_p95": 8.5,
+    "cost_usd_per_request": 0.0091
+  },
+  "results": [
+    {
+      "id": "m1",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 1,
+      "message": "My last credit sale was declined. Why, and how would I refund a sale on the machine if I ever needed to?",
+      "response": "Your most recent declined credit sale is transaction TX-90411:\n\n- **Date:** 2026-11-26\n- **Amount:** R$ 250.00\n- **Card machine:** GM-10377\n- **Response code:** 51\n- **Reason:** Insufficient funds, declined by the card issuer.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_recent_transactions]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6992,
+        "output_tokens": 548,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.008965
+      },
+      "seconds": 7.3,
+      "trace_id": "38bd462383064d1088757079eb85314b",
+      "evidence": [
+        {
+          "tool": "get_recent_transactions",
+          "output": "{\"currency\": \"BRL\", \"transactions\": [{\"date\": \"2026-11-26\", \"id\": \"TX-90411\", \"amount\": 250.0, \"method\": \"credit\", \"terminal\": \"GM-10377\", \"status\": \"declined\", \"decline_code\": \"51\", \"decline_reason\": \"Insufficient funds, declined by the card issuer\"}, {\"date\": \"2026-11-26\", \"id\": \"TX-90398\", \"amount\": 42.9, \"method\": \"debit\", \"terminal\": \"GM-10377\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90120\", \"amount\": 1310.0, \"method\": \"credit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90102\", \"amount\": 530.5, \"method\": \"debit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The decline details for TX-90411 (R$ 250.00, code 51, insufficient funds) match the reference and the evidence. The answer leaves out how to refund a sale on the machine (Estorno steps, password, same card, CV code, same day), which the reference covers."
+      },
+      "passed": false
+    },
+    {
+      "id": "m1",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 2,
+      "message": "My last credit sale was declined. Why, and how would I refund a sale on the machine if I ever needed to?",
+      "response": "Your most recent declined credit sale is TX-90411. It was for R$250.00 on 2026-11-26 on terminal GM-10377.\n\n- **Decline code:** 51\n- **Reason:** Insufficient funds, declined by the card issuer.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_recent_transactions]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6942,
+        "output_tokens": 430,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.007685
+      },
+      "seconds": 6.3,
+      "trace_id": "7841122a20e649acad088ffa3eb7340b",
+      "evidence": [
+        {
+          "tool": "get_recent_transactions",
+          "output": "{\"currency\": \"BRL\", \"transactions\": [{\"date\": \"2026-11-26\", \"id\": \"TX-90411\", \"amount\": 250.0, \"method\": \"credit\", \"terminal\": \"GM-10377\", \"status\": \"declined\", \"decline_code\": \"51\", \"decline_reason\": \"Insufficient funds, declined by the card issuer\"}, {\"date\": \"2026-11-26\", \"id\": \"TX-90398\", \"amount\": 42.9, \"method\": \"debit\", \"terminal\": \"GM-10377\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90120\", \"amount\": 1310.0, \"method\": \"credit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90102\", \"amount\": 530.5, \"method\": \"debit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The decline details for TX-90411 (R$ 250.00, code 51, insufficient funds) match the reference and the evidence. The answer leaves out the refund (Estorno) steps the merchant asked about."
+      },
+      "passed": false
+    },
+    {
+      "id": "m1",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 3,
+      "message": "My last credit sale was declined. Why, and how would I refund a sale on the machine if I ever needed to?",
+      "response": "Your most recent declined credit sale is TX-90411:\n\n- **Date:** 2026-11-26\n- **Amount:** R$ 250.00\n- **Machine:** GM-10377\n- **Decline code:** 51\n- **Reason:** Insufficient funds, declined by the card issuer.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_recent_transactions]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6977,
+        "output_tokens": 540,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.008855
+      },
+      "seconds": 7.5,
+      "trace_id": "2378dbe3568b4c20a3eb7ac53171bd19",
+      "evidence": [
+        {
+          "tool": "get_recent_transactions",
+          "output": "{\"currency\": \"BRL\", \"transactions\": [{\"date\": \"2026-11-26\", \"id\": \"TX-90411\", \"amount\": 250.0, \"method\": \"credit\", \"terminal\": \"GM-10377\", \"status\": \"declined\", \"decline_code\": \"51\", \"decline_reason\": \"Insufficient funds, declined by the card issuer\"}, {\"date\": \"2026-11-26\", \"id\": \"TX-90398\", \"amount\": 42.9, \"method\": \"debit\", \"terminal\": \"GM-10377\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90120\", \"amount\": 1310.0, \"method\": \"credit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90102\", \"amount\": 530.5, \"method\": \"debit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The decline facts (TX-90411, R$ 250.00, code 51, insufficient funds) match the reference and the evidence. The answer omits the second question, how to refund a sale on the machine (Estorno, password, amount, card, CV code, same day), so it is incomplete and only partly useful."
+      },
+      "passed": false
+    },
+    {
+      "id": "m2",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 1,
+      "message": "Uma das minhas maquininhas está offline. Qual é, e como configuro o Wi-Fi nela?",
+      "response": "A maquininha offline é a **GS-48213**, modelo **Get Smart**.\n\n- Status: offline, visto pela última vez há 19 horas.\n- Conexão configurada: Wi-Fi.\n- Último erro: E-NET-02, sem conexão de rede.\n- Firmware: 3.8.1, desatualizado.\n\nA outra maquininha, a Get Mini **GM-10377**, está online.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_terminal_status]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6748,
+        "output_tokens": 636,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.009357
+      },
+      "seconds": 8.0,
+      "trace_id": "9e9618f987194d31816f1abbd9044a80",
+      "evidence": [
+        {
+          "tool": "get_terminal_status",
+          "output": "{\"terminals\": [{\"serial\": \"GS-48213\", \"model\": \"Get Smart\", \"status\": \"offline\", \"connection\": \"wifi\", \"last_seen_hours_ago\": 19, \"last_error\": \"E-NET-02: no network connection\", \"firmware\": \"3.8.1\", \"firmware_up_to_date\": false}, {\"serial\": \"GM-10377\", \"model\": \"Get Mini\", \"status\": \"online\", \"connection\": \"bluetooth\", \"last_seen_hours_ago\": 0, \"last_error\": null, \"firmware\": \"2.4.0\", \"firmware_up_to_date\": true}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The terminal facts (GS-48213, Get Smart, offline, E-NET-02) match the reference and appear in the evidence. The answer never explains how to configure Wi-Fi (tap Wi-Fi, Procurar Redes, choose the network, enter the password, confirm), so it misses the second half of the question and gives no next step."
+      },
+      "passed": false
+    },
+    {
+      "id": "m2",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 2,
+      "message": "Uma das minhas maquininhas está offline. Qual é, e como configuro o Wi-Fi nela?",
+      "response": "A máquina offline é a **Get Smart, número de série GS-48213**.\n\n- Status: offline, visto pela última vez há 19 horas.\n- Conexão: Wi-Fi.\n- Último erro: E-NET-02, sem conexão de rede.\n- Firmware: 3.8.1, que não está atualizado.\n\nA outra máquina, a Get Mini (GM-10377), está online.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_terminal_status]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6739,
+        "output_tokens": 647,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.009449
+      },
+      "seconds": 7.3,
+      "trace_id": "16cfc97c3f404c568726c37af48ca814",
+      "evidence": [
+        {
+          "tool": "get_terminal_status",
+          "output": "{\"terminals\": [{\"serial\": \"GS-48213\", \"model\": \"Get Smart\", \"status\": \"offline\", \"connection\": \"wifi\", \"last_seen_hours_ago\": 19, \"last_error\": \"E-NET-02: no network connection\", \"firmware\": \"3.8.1\", \"firmware_up_to_date\": false}, {\"serial\": \"GM-10377\", \"model\": \"Get Mini\", \"status\": \"online\", \"connection\": \"bluetooth\", \"last_seen_hours_ago\": 0, \"last_error\": null, \"firmware\": \"2.4.0\", \"firmware_up_to_date\": true}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The answer correctly names the offline Get Smart GS-48213 with error E-NET-02. It never explains how to set up Wi-Fi (tap Wi-Fi, Procurar Redes, choose the network, enter the password and confirm), so it misses half of the question."
+      },
+      "passed": false
+    },
+    {
+      "id": "m2",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 3,
+      "message": "Uma das minhas maquininhas está offline. Qual é, e como configuro o Wi-Fi nela?",
+      "response": "A maquininha offline é a **Get Smart**, número de série **GS-48213**.\n\n- **Status:** offline. Ela foi vista pela última vez há 19 horas.\n- **Conexão configurada:** Wi-Fi.\n- **Último erro:** E-NET-02, sem conexão de rede.\n- **Firmware:** 3.8.1, que não está atualizado.\n\nA outra maquininha, a Get Mini (GM-10377), está online.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_terminal_status]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6780,
+        "output_tokens": 683,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.009891
+      },
+      "seconds": 9.1,
+      "trace_id": "cea64f39111c489cbc5d48547d8829db",
+      "evidence": [
+        {
+          "tool": "get_terminal_status",
+          "output": "{\"terminals\": [{\"serial\": \"GS-48213\", \"model\": \"Get Smart\", \"status\": \"offline\", \"connection\": \"wifi\", \"last_seen_hours_ago\": 19, \"last_error\": \"E-NET-02: no network connection\", \"firmware\": \"3.8.1\", \"firmware_up_to_date\": false}, {\"serial\": \"GM-10377\", \"model\": \"Get Mini\", \"status\": \"online\", \"connection\": \"bluetooth\", \"last_seen_hours_ago\": 0, \"last_error\": null, \"firmware\": \"2.4.0\", \"firmware_up_to_date\": true}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The answer correctly identifies the offline Get Smart GS-48213 and its E-NET-02 error, and every detail comes from the evidence. It never answers the second question, how to configure Wi-Fi, which the reference covers with the Wi-Fi > Procurar Redes > senha steps."
+      },
+      "passed": false
+    },
+    {
+      "id": "m3",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 1,
+      "message": "How much will I be paid tomorrow, and what is the minimum amount I could advance in the app instead?",
+      "response": "Tomorrow is 2026-11-27. You have two payouts scheduled for that date, to your Santander account ****4321:\n\n- R$ 1,265.59 net, from the credit sale on 2026-11-25.\n- R$ 42.30 net, from the debit sale on 2026-11-26.\n\nThe total scheduled for tomorrow is **R$ 1,307.89**.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_settlement_schedule]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6886,
+        "output_tokens": 547,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.008743
+      },
+      "seconds": 6.5,
+      "trace_id": "4a39a469e32a4af8a629f1d0f1e96cc6",
+      "evidence": [
+        {
+          "tool": "get_settlement_schedule",
+          "output": "{\"today\": \"2026-11-26\", \"currency\": \"BRL\", \"bank_account\": \"Santander ****4321\", \"settlement_terms\": \"Debit and Pix: next business day. Credit: 2 business days.\", \"settlements\": [{\"sale_date\": \"2026-11-25\", \"method\": \"debit\", \"gross\": 530.5, \"fees\": 7.37, \"net\": 523.13, \"payout_date\": \"2026-11-26\", \"status\": \"paid\"}, {\"sale_date\": \"2026-11-25\", \"method\": \"credit\", \"gross\": 1310.0, \"fees\": 44.41, \"net\": 1265.59, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}, {\"sale_date\": \"2026-11-26\", \"method\": \"debit\", \"gross\": 42.9, \"fees\": 0.6, \"net\": 42.3, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The payout figures (R$ 1,265.59, R$ 42.30, total R$ 1,307.89) match the reference and the evidence. The answer leaves out the second question, the minimum advance amount of R$ 50.00."
+      },
+      "passed": false
+    },
+    {
+      "id": "m3",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 2,
+      "message": "How much will I be paid tomorrow, and what is the minimum amount I could advance in the app instead?",
+      "response": "You have two payouts scheduled for tomorrow, 2026-11-27, to your Santander account ****4321:\n\n- **Credit sale from 2026-11-25:** R$ 1,265.59 net (R$ 1,310.00 gross, R$ 44.41 fees).\n- **Debit sale from 2026-11-26:** R$ 42.30 net (R$ 42.90 gross, R$ 0.60 fees).\n\nThe total scheduled for tomorrow is **R$ 1,307.89**.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_settlement_schedule]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6927,
+        "output_tokens": 643,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.009785
+      },
+      "seconds": 8.0,
+      "trace_id": "7d51978d07ed48bfbbb2326a6ca7f9fb",
+      "evidence": [
+        {
+          "tool": "get_settlement_schedule",
+          "output": "{\"today\": \"2026-11-26\", \"currency\": \"BRL\", \"bank_account\": \"Santander ****4321\", \"settlement_terms\": \"Debit and Pix: next business day. Credit: 2 business days.\", \"settlements\": [{\"sale_date\": \"2026-11-25\", \"method\": \"debit\", \"gross\": 530.5, \"fees\": 7.37, \"net\": 523.13, \"payout_date\": \"2026-11-26\", \"status\": \"paid\"}, {\"sale_date\": \"2026-11-25\", \"method\": \"credit\", \"gross\": 1310.0, \"fees\": 44.41, \"net\": 1265.59, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}, {\"sale_date\": \"2026-11-26\", \"method\": \"debit\", \"gross\": 42.9, \"fees\": 0.6, \"net\": 42.3, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The payout figures (R$ 1,265.59 + R$ 42.30 = R$ 1,307.89 on 2026-11-27) match the reference and the evidence. The answer leaves out the second question, the R$ 50.00 minimum for an advance in the app, so it is incomplete."
+      },
+      "passed": false
+    },
+    {
+      "id": "m3",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 3,
+      "message": "How much will I be paid tomorrow, and what is the minimum amount I could advance in the app instead?",
+      "response": "Tomorrow is 2026-11-27. Two payouts are scheduled for that date, to your Santander ****4321 account:\n\n- Credit sale from 2026-11-25: R$ 1,265.59 net (R$ 1,310.00 gross, R$ 44.41 fees).\n- Debit sale from 2026-11-26: R$ 42.30 net (R$ 42.90 gross, R$ 0.60 fees).\n\nThe total scheduled for tomorrow is **R$ 1,307.89**.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_settlement_schedule]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6934,
+        "output_tokens": 588,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.009249
+      },
+      "seconds": 6.9,
+      "trace_id": "e8bc26a85744402694e62305d6d2ee0b",
+      "evidence": [
+        {
+          "tool": "get_settlement_schedule",
+          "output": "{\"today\": \"2026-11-26\", \"currency\": \"BRL\", \"bank_account\": \"Santander ****4321\", \"settlement_terms\": \"Debit and Pix: next business day. Credit: 2 business days.\", \"settlements\": [{\"sale_date\": \"2026-11-25\", \"method\": \"debit\", \"gross\": 530.5, \"fees\": 7.37, \"net\": 523.13, \"payout_date\": \"2026-11-26\", \"status\": \"paid\"}, {\"sale_date\": \"2026-11-25\", \"method\": \"credit\", \"gross\": 1310.0, \"fees\": 44.41, \"net\": 1265.59, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}, {\"sale_date\": \"2026-11-26\", \"method\": \"debit\", \"gross\": 42.9, \"fees\": 0.6, \"net\": 42.3, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The payout amounts and the R$ 1,307.89 total match the reference and the evidence. The answer leaves out the minimum advance amount (R$ 50.00), which the reference covers."
+      },
+      "passed": false
+    },
+    {
+      "id": "m4",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 1,
+      "message": "Which account do my payouts go to, and how do I change it?",
+      "response": "Your payouts are currently sent to a Santander account ending in 4321 (shown as ****4321). The data I have doesn't include the agency number or the full account number.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_settlement_schedule]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6768,
+        "output_tokens": 451,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.007547
+      },
+      "seconds": 6.1,
+      "trace_id": "54192a782d8e4a48b40d619da043cce2",
+      "evidence": [
+        {
+          "tool": "get_settlement_schedule",
+          "output": "{\"today\": \"2026-11-26\", \"currency\": \"BRL\", \"bank_account\": \"Santander ****4321\", \"settlement_terms\": \"Debit and Pix: next business day. Credit: 2 business days.\", \"settlements\": [{\"sale_date\": \"2026-11-25\", \"method\": \"debit\", \"gross\": 530.5, \"fees\": 7.37, \"net\": 523.13, \"payout_date\": \"2026-11-26\", \"status\": \"paid\"}, {\"sale_date\": \"2026-11-25\", \"method\": \"credit\", \"gross\": 1310.0, \"fees\": 44.41, \"net\": 1265.59, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}, {\"sale_date\": \"2026-11-26\", \"method\": \"debit\", \"gross\": 42.9, \"fees\": 0.6, \"net\": 42.3, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The answer correctly identifies the Santander account ending in 4321 but omits how to change it (Getnet Brasil app: name/photo > Dados do Negócio > Dados bancários, or Portal do Cliente), so the second half of the question goes unanswered."
+      },
+      "passed": false
+    },
+    {
+      "id": "m4",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 2,
+      "message": "Which account do my payouts go to, and how do I change it?",
+      "response": "Your payouts are currently deposited to a Santander account ending in 4321, shown as \"Santander ****4321\". The branch number isn't shown in the data I can see.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_settlement_schedule]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6763,
+        "output_tokens": 453,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.007557
+      },
+      "seconds": 6.3,
+      "trace_id": "4a81a4359ad248858c2642bed10b3f6f",
+      "evidence": [
+        {
+          "tool": "get_settlement_schedule",
+          "output": "{\"today\": \"2026-11-26\", \"currency\": \"BRL\", \"bank_account\": \"Santander ****4321\", \"settlement_terms\": \"Debit and Pix: next business day. Credit: 2 business days.\", \"settlements\": [{\"sale_date\": \"2026-11-25\", \"method\": \"debit\", \"gross\": 530.5, \"fees\": 7.37, \"net\": 523.13, \"payout_date\": \"2026-11-26\", \"status\": \"paid\"}, {\"sale_date\": \"2026-11-25\", \"method\": \"credit\", \"gross\": 1310.0, \"fees\": 44.41, \"net\": 1265.59, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}, {\"sale_date\": \"2026-11-26\", \"method\": \"debit\", \"gross\": 42.9, \"fees\": 0.6, \"net\": 42.3, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The account fact, Santander ending in 4321, is correct and grounded. The answer never says how to change the account (Getnet Brasil app: name/photo > Dados do Negócio > Dados bancários, or Portal do Cliente), so the second half of the question goes unanswered and the merchant gets no next step."
+      },
+      "passed": false
+    },
+    {
+      "id": "m4",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 3,
+      "message": "Which account do my payouts go to, and how do I change it?",
+      "response": "Your payouts currently go to a Santander account ending in 4321 (shown masked as ****4321). The system doesn't show me the agency number.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_settlement_schedule]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6765,
+        "output_tokens": 375,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.006781
+      },
+      "seconds": 7.0,
+      "trace_id": "0e078802d5a841a2a8832214e0a72654",
+      "evidence": [
+        {
+          "tool": "get_settlement_schedule",
+          "output": "{\"today\": \"2026-11-26\", \"currency\": \"BRL\", \"bank_account\": \"Santander ****4321\", \"settlement_terms\": \"Debit and Pix: next business day. Credit: 2 business days.\", \"settlements\": [{\"sale_date\": \"2026-11-25\", \"method\": \"debit\", \"gross\": 530.5, \"fees\": 7.37, \"net\": 523.13, \"payout_date\": \"2026-11-26\", \"status\": \"paid\"}, {\"sale_date\": \"2026-11-25\", \"method\": \"credit\", \"gross\": 1310.0, \"fees\": 44.41, \"net\": 1265.59, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}, {\"sale_date\": \"2026-11-26\", \"method\": \"debit\", \"gross\": 42.9, \"fees\": 0.6, \"net\": 42.3, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The Santander ****4321 account matches the reference and the evidence. The answer leaves out how to change the account (Getnet Brasil app: name/photo > Dados do Negócio > Dados bancários, or the Portal do Cliente), so the second half of the question goes unanswered."
+      },
+      "passed": false
+    },
+    {
+      "id": "m5",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 1,
+      "message": "Is my Get Smart's firmware up to date, and how do I request maintenance for a machine?",
+      "response": "Your Get Smart (serial GS-48213) is running firmware 3.8.1, and the account data shows it is not up to date.\n\nThe terminal is also offline. It was last seen 19 hours ago on wifi, and its last error is E-NET-02: no network connection.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_terminal_status]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6666,
+        "output_tokens": 508,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.007913
+      },
+      "seconds": 6.5,
+      "trace_id": "aa730352e6c44584b878d375424e5e6c",
+      "evidence": [
+        {
+          "tool": "get_terminal_status",
+          "output": "{\"terminals\": [{\"serial\": \"GS-48213\", \"model\": \"Get Smart\", \"status\": \"offline\", \"connection\": \"wifi\", \"last_seen_hours_ago\": 19, \"last_error\": \"E-NET-02: no network connection\", \"firmware\": \"3.8.1\", \"firmware_up_to_date\": false}, {\"serial\": \"GM-10377\", \"model\": \"Get Mini\", \"status\": \"online\", \"connection\": \"bluetooth\", \"last_seen_hours_ago\": 0, \"last_error\": null, \"firmware\": \"2.4.0\", \"firmware_up_to_date\": true}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The firmware facts (3.8.1, not up to date) match the reference and the evidence. The answer omits the second part of the question, how to request maintenance through the app or Portal Minha Conta, so it is incomplete and does not give the merchant the next step."
+      },
+      "passed": false
+    },
+    {
+      "id": "m5",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 2,
+      "message": "Is my Get Smart's firmware up to date, and how do I request maintenance for a machine?",
+      "response": "Your Get Smart (serial GS-48213) is running firmware 3.8.1, and that firmware is **not up to date**.\n\nThe machine is also offline. It last connected 19 hours ago over Wi-Fi, and its last error was E-NET-02: no network connection.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_terminal_status]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6662,
+        "output_tokens": 515,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.007975
+      },
+      "seconds": 7.4,
+      "trace_id": "c5e2c0ce33d64a0d9c8a74485dca6a03",
+      "evidence": [
+        {
+          "tool": "get_terminal_status",
+          "output": "{\"terminals\": [{\"serial\": \"GS-48213\", \"model\": \"Get Smart\", \"status\": \"offline\", \"connection\": \"wifi\", \"last_seen_hours_ago\": 19, \"last_error\": \"E-NET-02: no network connection\", \"firmware\": \"3.8.1\", \"firmware_up_to_date\": false}, {\"serial\": \"GM-10377\", \"model\": \"Get Mini\", \"status\": \"online\", \"connection\": \"bluetooth\", \"last_seen_hours_ago\": 0, \"last_error\": null, \"firmware\": \"2.4.0\", \"firmware_up_to_date\": true}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The answer states the firmware 3.8.1 and its not-up-to-date status, both supported by the evidence. It never says how to request maintenance (the 'Manutenção de máquina' option in the app or 'Solicitar manutenção' in the Portal Minha Conta), so the second question goes unanswered."
+      },
+      "passed": false
+    },
+    {
+      "id": "m5",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 3,
+      "message": "Is my Get Smart's firmware up to date, and how do I request maintenance for a machine?",
+      "response": "Your Get Smart (serial GS-48213) is running firmware 3.8.1, and that version is not up to date.\n\nThe machine is offline. It was last seen 19 hours ago, and its last error was E-NET-02: no network connection. It connects over Wi-Fi.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_terminal_status]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6668,
+        "output_tokens": 519,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.008027
+      },
+      "seconds": 6.3,
+      "trace_id": "79539345dcef4cfba101e7fb0af3c9be",
+      "evidence": [
+        {
+          "tool": "get_terminal_status",
+          "output": "{\"terminals\": [{\"serial\": \"GS-48213\", \"model\": \"Get Smart\", \"status\": \"offline\", \"connection\": \"wifi\", \"last_seen_hours_ago\": 19, \"last_error\": \"E-NET-02: no network connection\", \"firmware\": \"3.8.1\", \"firmware_up_to_date\": false}, {\"serial\": \"GM-10377\", \"model\": \"Get Mini\", \"status\": \"online\", \"connection\": \"bluetooth\", \"last_seen_hours_ago\": 0, \"last_error\": null, \"firmware\": \"2.4.0\", \"firmware_up_to_date\": true}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The firmware facts (3.8.1, not up to date) match the reference and the evidence. The answer never explains how to request maintenance (the Getnet Brasil app's 'Manutenção de máquina' or Portal Minha Conta's 'Solicitar manutenção'), which leaves half of the question unanswered and gives the merchant no next step."
+      },
+      "passed": false
+    },
+    {
+      "id": "m6",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 1,
+      "message": "Quanto recebi hoje, e qual é o limite diário para transferir dinheiro da Get Conta para outro banco?",
+      "response": "Hoje (26/11/2026) você recebeu na conta **R$ 523,13**. Esse valor é o repasse líquido das vendas no débito de ontem (25/11), com status pago.\n\nTambém houve uma venda aprovada hoje no débito, de R$ 42,90 (líquido de R$ 42,30). Ela está agendada para 27/11, então ainda não entrou na conta.\n\nUma venda no crédito de R$ 250,00 foi recusada hoje pelo emissor do cartão (código 51, saldo insuficiente). Ela não gera repasse.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_settlement_schedule,get_recent_transactions]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 7809,
+        "output_tokens": 713,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.012249
+      },
+      "seconds": 7.9,
+      "trace_id": "998ac8ca5ba94ee89cd3f59b4b7e242d",
+      "evidence": [
+        {
+          "tool": "get_settlement_schedule",
+          "output": "{\"today\": \"2026-11-26\", \"currency\": \"BRL\", \"bank_account\": \"Santander ****4321\", \"settlement_terms\": \"Debit and Pix: next business day. Credit: 2 business days.\", \"settlements\": [{\"sale_date\": \"2026-11-25\", \"method\": \"debit\", \"gross\": 530.5, \"fees\": 7.37, \"net\": 523.13, \"payout_date\": \"2026-11-26\", \"status\": \"paid\"}, {\"sale_date\": \"2026-11-25\", \"method\": \"credit\", \"gross\": 1310.0, \"fees\": 44.41, \"net\": 1265.59, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}, {\"sale_date\": \"2026-11-26\", \"method\": \"debit\", \"gross\": 42.9, \"fees\": 0.6, \"net\": 42.3, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}]}"
+        },
+        {
+          "tool": "get_recent_transactions",
+          "output": "{\"currency\": \"BRL\", \"transactions\": [{\"date\": \"2026-11-26\", \"id\": \"TX-90411\", \"amount\": 250.0, \"method\": \"credit\", \"terminal\": \"GM-10377\", \"status\": \"declined\", \"decline_code\": \"51\", \"decline_reason\": \"Insufficient funds, declined by the card issuer\"}, {\"date\": \"2026-11-26\", \"id\": \"TX-90398\", \"amount\": 42.9, \"method\": \"debit\", \"terminal\": \"GM-10377\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90120\", \"amount\": 1310.0, \"method\": \"credit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90102\", \"amount\": 530.5, \"method\": \"debit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The amount received today, R$ 523,13 from yesterday's debit sale, agrees with the reference and the evidence. The answer leaves out the R$ 2.000,00 daily limit for transfers from the Get Conta to another bank, which the merchant asked about and the reference covers."
+      },
+      "passed": false
+    },
+    {
+      "id": "m6",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 2,
+      "message": "Quanto recebi hoje, e qual é o limite diário para transferir dinheiro da Get Conta para outro banco?",
+      "response": "Hoje (26/11/2026) você recebeu na conta um pagamento de **R$ 523,13**. É o valor líquido da venda no débito do dia 25/11 (bruto de R$ 530,50, taxas de R$ 7,37), com status \"pago\" e depositado na conta Santander ****4321.\n\nHoje você também fez uma venda aprovada no débito de R$ 42,90 (líquido de R$ 42,30). Esse valor está agendado para 27/11 e ainda não entrou na conta.\n\nA venda de R$ 250,00 no crédito, feita hoje, foi recusada pelo emissor do cartão (código 51, saldo insuficiente). Ela não entra nos valores acima.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_settlement_schedule,get_recent_transactions]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 7864,
+        "output_tokens": 790,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.013129
+      },
+      "seconds": 8.4,
+      "trace_id": "0f219c7c8a3846b58d4236af90b5082b",
+      "evidence": [
+        {
+          "tool": "get_settlement_schedule",
+          "output": "{\"today\": \"2026-11-26\", \"currency\": \"BRL\", \"bank_account\": \"Santander ****4321\", \"settlement_terms\": \"Debit and Pix: next business day. Credit: 2 business days.\", \"settlements\": [{\"sale_date\": \"2026-11-25\", \"method\": \"debit\", \"gross\": 530.5, \"fees\": 7.37, \"net\": 523.13, \"payout_date\": \"2026-11-26\", \"status\": \"paid\"}, {\"sale_date\": \"2026-11-25\", \"method\": \"credit\", \"gross\": 1310.0, \"fees\": 44.41, \"net\": 1265.59, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}, {\"sale_date\": \"2026-11-26\", \"method\": \"debit\", \"gross\": 42.9, \"fees\": 0.6, \"net\": 42.3, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}]}"
+        },
+        {
+          "tool": "get_recent_transactions",
+          "output": "{\"currency\": \"BRL\", \"transactions\": [{\"date\": \"2026-11-26\", \"id\": \"TX-90411\", \"amount\": 250.0, \"method\": \"credit\", \"terminal\": \"GM-10377\", \"status\": \"declined\", \"decline_code\": \"51\", \"decline_reason\": \"Insufficient funds, declined by the card issuer\"}, {\"date\": \"2026-11-26\", \"id\": \"TX-90398\", \"amount\": 42.9, \"method\": \"debit\", \"terminal\": \"GM-10377\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90120\", \"amount\": 1310.0, \"method\": \"credit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90102\", \"amount\": 530.5, \"method\": \"debit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The answer gets today's payout right (R$ 523,13, net of yesterday's debit sale), and every figure it gives matches the evidence. However, it never answers the second question, the daily Get Conta transfer limit (R$ 2.000,00 per the reference), and gives no guidance on it."
+      },
+      "passed": false
+    },
+    {
+      "id": "m6",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 3,
+      "message": "Quanto recebi hoje, e qual é o limite diário para transferir dinheiro da Get Conta para outro banco?",
+      "response": "Hoje (26/11/2026) você recebeu **R$ 523,13**. É o valor líquido do pagamento das vendas no débito de 25/11 (bruto R$ 530,50, taxas R$ 7,37), com status \"pago\" na conta Santander ****4321.\n\nOutros valores ainda não caíram. Eles estão agendados para 27/11/2026:\n- R$ 1.265,59 (vendas no crédito de 25/11)\n- R$ 42,30 (vendas no débito de hoje)",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_settlement_schedule]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 7024,
+        "output_tokens": 664,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.010189
+      },
+      "seconds": 6.7,
+      "trace_id": "b46e970d60414887af2d95ecae6f97f7",
+      "evidence": [
+        {
+          "tool": "get_settlement_schedule",
+          "output": "{\"today\": \"2026-11-26\", \"currency\": \"BRL\", \"bank_account\": \"Santander ****4321\", \"settlement_terms\": \"Debit and Pix: next business day. Credit: 2 business days.\", \"settlements\": [{\"sale_date\": \"2026-11-25\", \"method\": \"debit\", \"gross\": 530.5, \"fees\": 7.37, \"net\": 523.13, \"payout_date\": \"2026-11-26\", \"status\": \"paid\"}, {\"sale_date\": \"2026-11-25\", \"method\": \"credit\", \"gross\": 1310.0, \"fees\": 44.41, \"net\": 1265.59, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}, {\"sale_date\": \"2026-11-26\", \"method\": \"debit\", \"gross\": 42.9, \"fees\": 0.6, \"net\": 42.3, \"payout_date\": \"2026-11-27\", \"status\": \"scheduled\"}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The answer omits the second part of the question, the daily Get Conta transfer limit of R$ 2.000,00. The figures it does give (R$ 523,13 paid today, plus the scheduled amounts) match the evidence and the reference."
+      },
+      "passed": false
+    },
+    {
+      "id": "m7",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 1,
+      "message": "Was my R$ 42.90 debit sale today approved, and what is the difference between the statuses 'autorizada' and 'aprovada'?",
+      "response": "Yes, your R$ 42.90 debit sale from today (2026-11-26) was approved. Its status in the account data is \"approved\". The transaction ID is TX-90398, and it was made on terminal GM-10377. There is no decline reason because it wasn't declined.\n\nThe data doesn't show a time for this transaction, only the date.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_recent_transactions]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 7101,
+        "output_tokens": 577,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.009473
+      },
+      "seconds": 8.3,
+      "trace_id": "95a1333db9174706a398641713c58441",
+      "evidence": [
+        {
+          "tool": "get_recent_transactions",
+          "output": "{\"currency\": \"BRL\", \"transactions\": [{\"date\": \"2026-11-26\", \"id\": \"TX-90411\", \"amount\": 250.0, \"method\": \"credit\", \"terminal\": \"GM-10377\", \"status\": \"declined\", \"decline_code\": \"51\", \"decline_reason\": \"Insufficient funds, declined by the card issuer\"}, {\"date\": \"2026-11-26\", \"id\": \"TX-90398\", \"amount\": 42.9, \"method\": \"debit\", \"terminal\": \"GM-10377\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90120\", \"amount\": 1310.0, \"method\": \"credit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90102\", \"amount\": 530.5, \"method\": \"debit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": true
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The approval facts (TX-90398, R$ 42.90, GM-10377, approved) match the reference and the evidence. The answer never explains the difference between 'autorizada' and 'aprovada', which was the second part of the merchant's question."
+      },
+      "passed": false
+    },
+    {
+      "id": "m7",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 2,
+      "message": "Was my R$ 42.90 debit sale today approved, and what is the difference between the statuses 'autorizada' and 'aprovada'?",
+      "response": "Yes, your R$ 42.90 debit sale today (2026-11-26) was approved. The transaction is TX-90398, made on terminal GM-10377. The status in your account data is \"approved\", and there is no decline reason. The data doesn't show a time for the sale.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_recent_transactions]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 7075,
+        "output_tokens": 579,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.009441
+      },
+      "seconds": 7.1,
+      "trace_id": "0555fd8f438641ae8baabf990a483572",
+      "evidence": [
+        {
+          "tool": "get_recent_transactions",
+          "output": "{\"currency\": \"BRL\", \"transactions\": [{\"date\": \"2026-11-26\", \"id\": \"TX-90411\", \"amount\": 250.0, \"method\": \"credit\", \"terminal\": \"GM-10377\", \"status\": \"declined\", \"decline_code\": \"51\", \"decline_reason\": \"Insufficient funds, declined by the card issuer\"}, {\"date\": \"2026-11-26\", \"id\": \"TX-90398\", \"amount\": 42.9, \"method\": \"debit\", \"terminal\": \"GM-10377\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90120\", \"amount\": 1310.0, \"method\": \"credit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90102\", \"amount\": 530.5, \"method\": \"debit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": true
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The approval facts (TX-90398, R$ 42.90, debit, GM-10377, approved) match the reference and the evidence. The answer never explains the difference between 'autorizada' and 'aprovada', which the reference covers."
+      },
+      "passed": false
+    },
+    {
+      "id": "m7",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 3,
+      "message": "Was my R$ 42.90 debit sale today approved, and what is the difference between the statuses 'autorizada' and 'aprovada'?",
+      "response": "Yes, your R$ 42.90 debit sale today (2026-11-26) was approved. Its transaction ID is TX-90398, and it went through terminal GM-10377. The status in your account data is \"approved\". The data has no time for this transaction, only the date.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_recent_transactions]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 7096,
+        "output_tokens": 581,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.009503
+      },
+      "seconds": 8.2,
+      "trace_id": "029aa3de42ca400a93ff32ac3f3c9af5",
+      "evidence": [
+        {
+          "tool": "get_recent_transactions",
+          "output": "{\"currency\": \"BRL\", \"transactions\": [{\"date\": \"2026-11-26\", \"id\": \"TX-90411\", \"amount\": 250.0, \"method\": \"credit\", \"terminal\": \"GM-10377\", \"status\": \"declined\", \"decline_code\": \"51\", \"decline_reason\": \"Insufficient funds, declined by the card issuer\"}, {\"date\": \"2026-11-26\", \"id\": \"TX-90398\", \"amount\": 42.9, \"method\": \"debit\", \"terminal\": \"GM-10377\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90120\", \"amount\": 1310.0, \"method\": \"credit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}, {\"date\": \"2026-11-25\", \"id\": \"TX-90102\", \"amount\": 530.5, \"method\": \"debit\", \"terminal\": \"GS-48213\", \"status\": \"approved\", \"decline_code\": null, \"decline_reason\": null}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": true
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The answer correctly confirms that TX-90398 was approved, and every fact it gives appears in the evidence. It never explains the difference between 'autorizada' and 'aprovada', which the reference covers."
+      },
+      "passed": false
+    },
+    {
+      "id": "m8",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 1,
+      "message": "My Get Smart is offline. What error does it show, and could I take card payments on my phone in the meantime?",
+      "response": "Your Get Smart (serial GS-48213) is offline. Here is what its record shows:\n\n- **Last error:** E-NET-02, \"no network connection\".\n- **Last seen:** 19 hours ago.\n- **Connection type:** Wi-Fi.\n- **Firmware:** 3.8.1, which is not up to date.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_terminal_status]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6691,
+        "output_tokens": 592,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.008803
+      },
+      "seconds": 8.5,
+      "trace_id": "47713c7593454a1bb73b3734b9fe7ce2",
+      "evidence": [
+        {
+          "tool": "get_terminal_status",
+          "output": "{\"terminals\": [{\"serial\": \"GS-48213\", \"model\": \"Get Smart\", \"status\": \"offline\", \"connection\": \"wifi\", \"last_seen_hours_ago\": 19, \"last_error\": \"E-NET-02: no network connection\", \"firmware\": \"3.8.1\", \"firmware_up_to_date\": false}, {\"serial\": \"GM-10377\", \"model\": \"Get Mini\", \"status\": \"online\", \"connection\": \"bluetooth\", \"last_seen_hours_ago\": 0, \"last_error\": null, \"firmware\": \"2.4.0\", \"firmware_up_to_date\": true}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The answer correctly reports error E-NET-02 with facts from the evidence, but it never answers whether the merchant can take card payments on a phone (Get Tap on an Android phone with NFC, contactless, no monthly fee)."
+      },
+      "passed": false
+    },
+    {
+      "id": "m8",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 2,
+      "message": "My Get Smart is offline. What error does it show, and could I take card payments on my phone in the meantime?",
+      "response": "Your Get Smart (serial GS-48213) is offline. It was last seen 19 hours ago and connects over Wi-Fi.\n\n- **Error:** E-NET-02, \"no network connection\". This is the last error it logged.\n- **Firmware:** It runs 3.8.1, which is not up to date.\n\nThe tool result doesn't give a cause beyond the error message, and it doesn't give a next step.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_terminal_status]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6690,
+        "output_tokens": 571,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.008591
+      },
+      "seconds": 8.5,
+      "trace_id": "bb72593403da4a90a542ffc1b528a948",
+      "evidence": [
+        {
+          "tool": "get_terminal_status",
+          "output": "{\"terminals\": [{\"serial\": \"GS-48213\", \"model\": \"Get Smart\", \"status\": \"offline\", \"connection\": \"wifi\", \"last_seen_hours_ago\": 19, \"last_error\": \"E-NET-02: no network connection\", \"firmware\": \"3.8.1\", \"firmware_up_to_date\": false}, {\"serial\": \"GM-10377\", \"model\": \"Get Mini\", \"status\": \"online\", \"connection\": \"bluetooth\", \"last_seen_hours_ago\": 0, \"last_error\": null, \"firmware\": \"2.4.0\", \"firmware_up_to_date\": true}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": true,
+        "reason": "The error code, serial, last-seen time, Wi-Fi connection and firmware details all match the evidence and the reference. The answer never addresses the second question, whether the merchant can take card payments on a phone meanwhile; the reference answers it with Get Tap on an Android phone with NFC."
+      },
+      "passed": false
+    },
+    {
+      "id": "m8",
+      "kind": "multi",
+      "split": "dev",
+      "repeat": 3,
+      "message": "My Get Smart is offline. What error does it show, and could I take card payments on my phone in the meantime?",
+      "response": "Your Get Smart (serial GS-48213) is offline. Here is what the account shows:\n\n- **Last error:** E-NET-02, \"no network connection\".\n- **Connection:** Wi-Fi.\n- **Last seen:** 19 hours ago.\n- **Firmware:** 3.8.1, which is not up to date.",
+      "path": [
+        "guardrail",
+        "router",
+        "support[get_terminal_status]",
+        "router",
+        "synthesizer"
+      ],
+      "specialist_runs": 1,
+      "sources": [],
+      "verifier": null,
+      "handoff": null,
+      "usage": {
+        "input_tokens": 6681,
+        "output_tokens": 573,
+        "llm_calls": 4,
+        "estimated_cost_usd": 0.008593
+      },
+      "seconds": 6.1,
+      "trace_id": "93ea48207a4e4d51968c22b8604c9e40",
+      "evidence": [
+        {
+          "tool": "get_terminal_status",
+          "output": "{\"terminals\": [{\"serial\": \"GS-48213\", \"model\": \"Get Smart\", \"status\": \"offline\", \"connection\": \"wifi\", \"last_seen_hours_ago\": 19, \"last_error\": \"E-NET-02: no network connection\", \"firmware\": \"3.8.1\", \"firmware_up_to_date\": false}, {\"serial\": \"GM-10377\", \"model\": \"Get Mini\", \"status\": \"online\", \"connection\": \"bluetooth\", \"last_seen_hours_ago\": 0, \"last_error\": null, \"firmware\": \"2.4.0\", \"firmware_up_to_date\": true}]}"
+        }
+      ],
+      "checks": {
+        "outcome": true,
+        "agents": false,
+        "tools": false,
+        "facts": false
+      },
+      "judge": {
+        "correct": true,
+        "grounded": true,
+        "complete": false,
+        "useful": false,
+        "reason": "The error details are right and come from the evidence. The answer leaves out the second question entirely: it never mentions Get Tap or taking card payments on a phone."
+      },
+      "passed": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.env
+.venv
+.git
+__pycache__
+.pytest_cache
+data/chroma
+.cache
+VIDEO_NOTES.md
+STUDY_GUIDE.pdf
+VIDEO_SCRIPT.pdf
+data/state
+.superpowers
+backups

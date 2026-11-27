@@ -1,0 +1,386 @@
+{
+  "cliente1988": {
+    "name": "João Pereira",
+    "business": "Padaria Pereira",
+    "plan": "Get Smart - Plano Essencial",
+    "status": "active",
+    "members": [
+      {
+        "subject": "joao.silva",
+        "status": "active"
+      },
+      {
+        "subject": "pedro.lima",
+        "status": "inactive"
+      }
+    ],
+    "settlement_terms": "Debit and Pix: next business day. Credit: 2 business days.",
+    "bank_account": "Santander ****4321",
+    "terminals": [
+      {
+        "serial": "GS-48213",
+        "model": "Get Smart",
+        "status": "offline",
+        "connection": "wifi",
+        "last_seen_hours_ago": 19,
+        "last_error": "E-NET-02: no network connection",
+        "firmware": "3.8.1",
+        "firmware_up_to_date": false
+      },
+      {
+        "serial": "GM-10377",
+        "model": "Get Mini",
+        "status": "online",
+        "connection": "bluetooth",
+        "last_seen_hours_ago": 0,
+        "last_error": null,
+        "firmware": "2.4.0",
+        "firmware_up_to_date": true
+      }
+    ],
+    "transactions": [
+      {
+        "id": "TX-90411",
+        "days_ago": 0,
+        "amount": 250.0,
+        "method": "credit",
+        "terminal": "GM-10377",
+        "status": "declined",
+        "decline_code": "51",
+        "decline_reason": "Insufficient funds, declined by the card issuer"
+      },
+      {
+        "id": "TX-90398",
+        "days_ago": 0,
+        "amount": 42.9,
+        "method": "debit",
+        "terminal": "GM-10377",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      },
+      {
+        "id": "TX-90120",
+        "days_ago": 1,
+        "amount": 1310.0,
+        "method": "credit",
+        "terminal": "GS-48213",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      },
+      {
+        "id": "TX-90102",
+        "days_ago": 1,
+        "amount": 530.5,
+        "method": "debit",
+        "terminal": "GS-48213",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      }
+    ],
+    "settlements": [
+      {
+        "sale_days_ago": 1,
+        "method": "debit",
+        "gross": 530.5,
+        "fees": 7.37,
+        "net": 523.13,
+        "payout_in_days": 0,
+        "status": "paid"
+      },
+      {
+        "sale_days_ago": 1,
+        "method": "credit",
+        "gross": 1310.0,
+        "fees": 44.41,
+        "net": 1265.59,
+        "payout_in_days": 1,
+        "status": "scheduled"
+      },
+      {
+        "sale_days_ago": 0,
+        "method": "debit",
+        "gross": 42.9,
+        "fees": 0.6,
+        "net": 42.3,
+        "payout_in_days": 1,
+        "status": "scheduled"
+      }
+    ]
+  },
+  "maria_2020": {
+    "name": "Maria Souza",
+    "business": "Salão Maria",
+    "plan": "Get Mini - Plano Básico",
+    "status": "active",
+    "members": [
+      {
+        "subject": "maria.santos",
+        "status": "active"
+      }
+    ],
+    "settlement_terms": "Debit and Pix: next business day. Credit: 30 days.",
+    "bank_account": "Santander ****9988",
+    "terminals": [
+      {
+        "serial": "GM-77001",
+        "model": "Get Mini",
+        "status": "online",
+        "connection": "bluetooth",
+        "last_seen_hours_ago": 0,
+        "last_error": null,
+        "firmware": "2.4.0",
+        "firmware_up_to_date": true
+      }
+    ],
+    "transactions": [
+      {
+        "id": "TX-55501",
+        "days_ago": 0,
+        "amount": 180.0,
+        "method": "credit",
+        "terminal": "GM-77001",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      }
+    ],
+    "settlements": [
+      {
+        "sale_days_ago": 0,
+        "method": "credit",
+        "gross": 180.0,
+        "fees": 5.4,
+        "net": 174.6,
+        "payout_in_days": 30,
+        "status": "scheduled"
+      }
+    ]
+  },
+  "mercado_lima": {
+    "name": "Carlos Lima",
+    "business": "Mercadinho Lima",
+    "plan": "Get Clássica - Plano Essencial",
+    "status": "active",
+    "members": [
+      {
+        "subject": "joao.silva",
+        "status": "active"
+      }
+    ],
+    "settlement_terms": "Debit and Pix: next business day. Credit: 2 business days.",
+    "bank_account": "Itaú ****1050",
+    "terminals": [
+      {
+        "serial": "GC-30418",
+        "model": "Get Clássica",
+        "status": "online",
+        "connection": "gprs",
+        "last_seen_hours_ago": 0,
+        "last_error": null,
+        "firmware": "5.1.0",
+        "firmware_up_to_date": true
+      },
+      {
+        "serial": "GC-30977",
+        "model": "Get Clássica",
+        "status": "offline",
+        "connection": "gprs",
+        "last_seen_hours_ago": 72,
+        "last_error": "ADQ 1-87: chip registration error",
+        "firmware": "5.0.2",
+        "firmware_up_to_date": false
+      }
+    ],
+    "transactions": [
+      {
+        "id": "TX-71230",
+        "days_ago": 0,
+        "amount": 89.9,
+        "method": "pix",
+        "terminal": "GC-30418",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      },
+      {
+        "id": "TX-71225",
+        "days_ago": 0,
+        "amount": 612.0,
+        "method": "credit",
+        "terminal": "GC-30418",
+        "status": "declined",
+        "decline_code": "05",
+        "decline_reason": "Do not honor, declined by the card issuer"
+      },
+      {
+        "id": "TX-71198",
+        "days_ago": 1,
+        "amount": 2400.0,
+        "method": "credit",
+        "terminal": "GC-30418",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      },
+      {
+        "id": "TX-71150",
+        "days_ago": 2,
+        "amount": 75.4,
+        "method": "debit",
+        "terminal": "GC-30418",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      }
+    ],
+    "settlements": [
+      {
+        "sale_days_ago": 2,
+        "method": "debit",
+        "gross": 75.4,
+        "fees": 1.05,
+        "net": 74.35,
+        "payout_in_days": -1,
+        "status": "paid"
+      },
+      {
+        "sale_days_ago": 1,
+        "method": "credit",
+        "gross": 2400.0,
+        "fees": 81.36,
+        "net": 2318.64,
+        "payout_in_days": 1,
+        "status": "scheduled"
+      },
+      {
+        "sale_days_ago": 0,
+        "method": "pix",
+        "gross": 89.9,
+        "fees": 0.8,
+        "net": 89.1,
+        "payout_in_days": 1,
+        "status": "scheduled"
+      }
+    ]
+  },
+  "bistro_nonna": {
+    "name": "Giulia Ferrari",
+    "business": "Bistrô da Nonna",
+    "plan": "Get Smart - Plano Avançado",
+    "status": "active",
+    "members": [
+      {
+        "subject": "carla.rossi",
+        "status": "active"
+      }
+    ],
+    "settlement_terms": "Debit and Pix: next business day. Credit: 30 days.",
+    "bank_account": "Bradesco ****7712",
+    "terminals": [
+      {
+        "serial": "GS-60021",
+        "model": "Get Smart",
+        "status": "online",
+        "connection": "wifi",
+        "last_seen_hours_ago": 0,
+        "last_error": null,
+        "firmware": "3.9.0",
+        "firmware_up_to_date": true
+      },
+      {
+        "serial": "GS-60022",
+        "model": "Get Smart",
+        "status": "online",
+        "connection": "wifi",
+        "last_seen_hours_ago": 0,
+        "last_error": null,
+        "firmware": "3.9.0",
+        "firmware_up_to_date": true
+      },
+      {
+        "serial": "GM-40555",
+        "model": "Get Mini",
+        "status": "offline",
+        "connection": "bluetooth",
+        "last_seen_hours_ago": 5,
+        "last_error": "E-BAT-01: battery critically low",
+        "firmware": "2.3.1",
+        "firmware_up_to_date": false
+      }
+    ],
+    "transactions": [
+      {
+        "id": "TX-82010",
+        "days_ago": 0,
+        "amount": 340.0,
+        "method": "credit",
+        "terminal": "GS-60021",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      },
+      {
+        "id": "TX-82009",
+        "days_ago": 0,
+        "amount": 58.0,
+        "method": "debit",
+        "terminal": "GS-60022",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      },
+      {
+        "id": "TX-81990",
+        "days_ago": 1,
+        "amount": 1200.0,
+        "method": "credit",
+        "terminal": "GS-60021",
+        "status": "approved",
+        "decline_code": null,
+        "decline_reason": null
+      },
+      {
+        "id": "TX-81975",
+        "days_ago": 1,
+        "amount": 96.5,
+        "method": "debit",
+        "terminal": "GS-60022",
+        "status": "declined",
+        "decline_code": "14",
+        "decline_reason": "Invalid card number, declined by the card issuer"
+      }
+    ],
+    "settlements": [
+      {
+        "sale_days_ago": 0,
+        "method": "debit",
+        "gross": 58.0,
+        "fees": 0.81,
+        "net": 57.19,
+        "payout_in_days": 1,
+        "status": "scheduled"
+      },
+      {
+        "sale_days_ago": 0,
+        "method": "credit",
+        "gross": 340.0,
+        "fees": 11.53,
+        "net": 328.47,
+        "payout_in_days": 30,
+        "status": "scheduled"
+      },
+      {
+        "sale_days_ago": 1,
+        "method": "credit",
+        "gross": 1200.0,
+        "fees": 40.68,
+        "net": 1159.32,
+        "payout_in_days": 29,
+        "status": "scheduled"
+      }
+    ]
+  }
+}
